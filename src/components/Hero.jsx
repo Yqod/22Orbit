@@ -1,0 +1,24 @@
+import React from "react";
+
+const Hero = () => (
+  <section className="relative w-full flex flex-col items-center justify-center pt-60 pb-24 px-4">
+    <div className="max-w-3xl mx-auto text-center">
+      <h1 className="font-bebas text-5xl sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8">
+        22Orbit -<p className="inline-block">Deine Webagentur</p>
+      </h1>
+      <p className="text-[#748cab] text-xl sm:text-2xl md:text-3xl font-light mb-8">
+        Webseiten, Shops, Plugins und Software – individuell und passgenau für dein Business.
+      </p>
+      <div className="relative z-[10001] flex justify-center">
+        <a
+          href="#leistungen"
+          className="inline-block bg-gradient-to-r from-[#3e5c76] to-[#1d2d44] text-[#f0ebd8] font-bebas text-xl px-10 py-4 rounded-full shadow-lg tracking-widest hover:scale-105 transition-transform duration-300"
+        >
+          Leistungen entdecken
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
+export default Hero;
