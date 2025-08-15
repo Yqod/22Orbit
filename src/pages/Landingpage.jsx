@@ -1,12 +1,14 @@
 import Particles from '../components/Galaxy.jsx';
 import Hero from '../components/Hero.jsx';
 import Navbar from '../components/Navbar.jsx';
+import LandingSection1 from '../components/LandingSection1.jsx';
+import LandingSection2 from '../components/LandingSection2.jsx';
 
 function Landingpage() {
   return (
-    <div className="bg-[#0d1321] w-full min-h-screen relative overflow-hidden">
+    <div className="bg-[#0d1321] w-full relative">
       {/* Particles als fixer Hintergrund */}
-      <div className="fixed inset-0 w-full h-full z-[9999]">
+      <div className="fixed inset-0 w-full h-full z-[9999] pointer-events-none">
         <Particles
           particleColors={['#f0ebd8', '#748cab']}
           particleCount={200}
@@ -29,9 +31,10 @@ function Landingpage() {
         />
       </div>
       {/* Content darunter */}
-      <div className="relative">
+      <div className="relative z-10">
         <Hero />
-        {/* Weitere Sections */}
+        <LandingSection1 />
+        <LandingSection2 />
       </div>
     </div>
   );

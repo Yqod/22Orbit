@@ -97,12 +97,10 @@ const Particles = ({
 
     const renderer = new Renderer({ depth: false, alpha: true });
     const gl = renderer.gl;
+    
 
-    gl.canvas.style.pointerEvents = "none";
+    
 // filepath: c:\Users\gee0r\Desktop\React\GALAXYWEBSITE\galaxywebsite\src\components\Galaxy.jsx
-
-
-
     container.appendChild(gl.canvas);
     gl.clearColor(0, 0, 0, 0);
 
