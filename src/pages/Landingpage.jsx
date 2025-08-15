@@ -3,6 +3,8 @@ import Hero from '../components/Hero.jsx';
 import Navbar from '../components/Navbar.jsx';
 import LandingSection1 from '../components/LandingSection1.jsx';
 import LandingSection2 from '../components/LandingSection2.jsx';
+import LandingSection3 from '../components/LandingSection3.jsx';
+import LandingSection4 from '../components/LandingSection4.jsx';  
 
 function Landingpage() {
   return (
@@ -14,7 +16,7 @@ function Landingpage() {
           particleCount={200}
           particleSpread={10}
           speed={0.1}
-          particleBaseSize={100}
+          particleBaseSize={130}
           moveParticlesOnHover={true}
           alphaParticles={false}
           disableRotation={false}
@@ -35,6 +37,8 @@ function Landingpage() {
         <Hero />
         <LandingSection1 />
         <LandingSection2 />
+        <LandingSection3 />
+        <LandingSection4 />
       </div>
     </div>
   );
