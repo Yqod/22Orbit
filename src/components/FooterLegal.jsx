@@ -1,7 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const FooterLegal = () => {
+  const location = useLocation();
+
+  // Smooth Scroll Funktion (gleiche wie in Navbar)
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 100; // Navbar Höhe berücksichtigen
+      const elementPosition = element.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const handleScrollClick = (sectionId, e) => {
+    e.preventDefault();
+    
+    // Wenn wir nicht auf der Landingpage sind, erst dahin navigieren
+    if (location.pathname !== "/") {
+      window.location.href = "/#" + sectionId;
+    } else {
+      scrollToSection(sectionId);
+    }
+  };
+
   return (
     <footer className="bg-[#0d1321] border-t border-[#748cab]/20 py-12 px-4">
       <div className="max-w-7xl mx-auto">
@@ -29,11 +56,11 @@ const FooterLegal = () => {
               Services
             </h4>
             <ul className="space-y-2 text-[#748cab] text-sm">
-              <li><a href="#landingpages" className="hover:text-[#f0ebd8] transition-colors">Landing Pages</a></li>
-              <li><a href="#webshops" className="hover:text-[#f0ebd8] transition-colors">Online Shops</a></li>
-              <li><a href="#webapp" className="hover:text-[#f0ebd8] transition-colors">Web Applications</a></li>
-              <li><a href="#software" className="hover:text-[#f0ebd8] transition-colors">Custom Software</a></li>
-              <li><a href="#plugins" className="hover:text-[#f0ebd8] transition-colors">Plugins</a></li>
+              <li><a  className="hover:text-[#f0ebd8] transition-colors">Landing Pages</a></li>
+              <li><a  className="hover:text-[#f0ebd8] transition-colors">Online Shops</a></li>
+              <li><a  className="hover:text-[#f0ebd8] transition-colors">Web Applications</a></li>
+              <li><a  className="hover:text-[#f0ebd8] transition-colors">Custom Software</a></li>
+              <li><a  className="hover:text-[#f0ebd8] transition-colors">Plugins</a></li>
             </ul>
           </div>
 
@@ -43,10 +70,23 @@ const FooterLegal = () => {
               Unternehmen
             </h4>
             <ul className="space-y-2 text-[#748cab] text-sm">
-              <li><Link to="/team" className="hover:text-[#f0ebd8] transition-colors">Unser Team</Link></li>
-              <li><Link to="/portfolio" className="hover:text-[#f0ebd8] transition-colors">Portfolio</Link></li>
+              <li>
+                <button 
+                  onClick={(e) => handleScrollClick("team-section", e)}
+                  className="hover:text-[#f0ebd8] transition-colors cursor-pointer text-left"
+                >
+                  Unser Team
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={(e) => handleScrollClick("portfolio-section", e)}
+                  className="hover:text-[#f0ebd8] transition-colors cursor-pointer text-left"
+                >
+                  Portfolio
+                </button>
+              </li>
               <li><Link to="/karriere" className="hover:text-[#f0ebd8] transition-colors">Karriere</Link></li>
-              <li><Link to="/blog" className="hover:text-[#f0ebd8] transition-colors">Blog</Link></li>
               <li><Link to="/kontakt" className="hover:text-[#f0ebd8] transition-colors">Kontakt</Link></li>
             </ul>
           </div>
@@ -58,8 +98,7 @@ const FooterLegal = () => {
             </h4>
             <ul className="space-y-2 text-[#748cab] text-sm">
               <li><Link to="/faq" className="hover:text-[#f0ebd8] transition-colors">FAQ</Link></li>
-              <li><Link to="/support" className="hover:text-[#f0ebd8] transition-colors">Support</Link></li>
-              <li><a href="mailto:support@22orbit.de" className="hover:text-[#f0ebd8] transition-colors">E-Mail Support</a></li>
+              <li><a href="mailto:info@22orbit.de" className="hover:text-[#f0ebd8] transition-colors">E-Mail Support</a></li>
             </ul>
           </div>
         </div>
@@ -115,7 +154,7 @@ const FooterLegal = () => {
               <Link to="/agb" className="hover:text-[#f0ebd8] transition-colors">
                 AGB
               </Link>
-              </div>
+            </div>
           </div>
 
           {/* Copyright */}

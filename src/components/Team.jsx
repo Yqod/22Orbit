@@ -7,13 +7,13 @@ const teamMembers = [
     role: "CEO & Full-Stack Developer",
     description: "Leitet das Team und entwickelt sowohl Frontend als auch Backend mit Leidenschaft für sauberen Code.",
     skills: ["React", "Node.js", "Leadership"],
-    image: "/team/alex.jpg", // Hier fügst du die Bilder ein
+    image: "/team/alex.jpg",
     color: "from-blue-500/20 to-indigo-500/20"
   },
   {
     id: 2,
     name: "Sarah Weber",
-    role: "Frontend Specialist",
+    role: "Frontend Specialist", 
     description: "Verwandelt Designs in perfekte, responsive Benutzeroberflächen mit einem Auge für Details.",
     skills: ["React", "TypeScript", "CSS"],
     image: "/team/sarah.jpg",
@@ -50,7 +50,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section id="team-section" className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
@@ -63,33 +63,30 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
-          {teamMembers.map((member, index) => (
+        {/* Team Grid - Alle gleiche Größe */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8 mb-16">
+          {teamMembers.map((member) => (
             <div
               key={member.id}
-              className={`group relative bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#748cab]/30 hover:border-[#748cab]/60 transition-all duration-300 hover:scale-105 ${
-                index === 2 ? 'lg:col-start-2' : '' // Zentriert das 5. Element bei 3 Spalten
-              }`}
+              className="group relative bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#748cab]/30 hover:border-[#748cab]/60 transition-all duration-300 hover:scale-105"
             >
               {/* Profile Image */}
-              <div className={`h-64 sm:h-72 bg-gradient-to-br ${member.color} relative overflow-hidden`}>
-                {/* Placeholder für Profilbild */}
+              <div className={`h-48 bg-gradient-to-br ${member.color} relative overflow-hidden`}>
                 <div className="w-full h-full flex items-center justify-center">
-                  <div className="w-24 h-24 sm:w-32 sm:h-32 bg-[#f0ebd8]/20 rounded-full flex items-center justify-center">
-                    <div className="text-3xl sm:text-4xl">👤</div>
+                  <div className="w-20 h-20 bg-[#f0ebd8]/20 rounded-full flex items-center justify-center">
+                    <div className="text-2xl">👤</div>
                   </div>
                 </div>
                 
-                {/* Overlay mit Skills */}
+                {/* Skills Overlay */}
                 <div className="absolute inset-0 bg-[#0d1321]/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <div className="text-center p-4">
-                    <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Skills</h4>
-                    <div className="flex flex-wrap justify-center gap-2">
+                  <div className="text-center p-3">
+                    <h4 className="font-bebas text-sm text-[#f0ebd8] mb-3 tracking-wide">Skills</h4>
+                    <div className="flex flex-wrap justify-center gap-1">
                       {member.skills.map((skill, skillIndex) => (
                         <span 
                           key={skillIndex}
-                          className="px-3 py-1 bg-[#748cab]/30 text-[#f0ebd8] text-xs rounded-full border border-[#748cab]/40"
+                          className="px-2 py-1 bg-[#748cab]/30 text-[#f0ebd8] text-xs rounded-full border border-[#748cab]/40"
                         >
                           {skill}
                         </span>
@@ -100,19 +97,41 @@ const Team = () => {
               </div>
 
               {/* Member Info */}
-              <div className="p-6">
-                <h3 className="font-bebas text-xl sm:text-2xl text-[#f0ebd8] mb-2 tracking-wide">
-                  {member.name}
-                </h3>
-                <p className="text-[#748cab] font-medium mb-3 text-sm sm:text-base">
-                  {member.role}
-                </p>
-                <p className="text-[#748cab] text-sm leading-relaxed">
+              <div className="p-4 h-32 flex flex-col justify-between">
+                <div>
+                  <h3 className="font-bebas text-lg text-[#f0ebd8] mb-1 tracking-wide">
+                    {member.name}
+                  </h3>
+                  <p className="text-[#748cab] font-medium text-sm mb-2">
+                    {member.role}
+                  </p>
+                </div>
+                <p className="text-[#748cab] text-xs leading-relaxed line-clamp-3">
                   {member.description}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Team Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
+            <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">50+</div>
+            <p className="text-[#748cab] text-sm">Projekte realisiert</p>
+          </div>
+          <div className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
+            <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">5</div>
+            <p className="text-[#748cab] text-sm">Jahre Erfahrung</p>
+          </div>
+          <div className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
+            <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">24/7</div>
+            <p className="text-[#748cab] text-sm">Support verfügbar</p>
+          </div>
+          <div className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
+            <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">100%</div>
+            <p className="text-[#748cab] text-sm">Kundenzufriedenheit</p>
+          </div>
         </div>
 
         {/* Team Values */}
@@ -121,24 +140,24 @@ const Team = () => {
             Was uns antreibt
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl mb-4">🔥</div>
-              <h4 className="font-bebas text-lg text-[#f0ebd8] mb-2 tracking-wide">Leidenschaft</h4>
-              <p className="text-[#748cab] text-sm">
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🔥</div>
+              <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Leidenschaft</h4>
+              <p className="text-[#748cab] leading-relaxed">
                 Wir lieben, was wir tun und bringen diese Begeisterung in jedes Projekt ein.
               </p>
             </div>
-            <div>
-              <div className="text-4xl mb-4">🚀</div>
-              <h4 className="font-bebas text-lg text-[#f0ebd8] mb-2 tracking-wide">Innovation</h4>
-              <p className="text-[#748cab] text-sm">
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🚀</div>
+              <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Innovation</h4>
+              <p className="text-[#748cab] leading-relaxed">
                 Immer auf dem neuesten Stand der Technik und offen für neue Wege.
               </p>
             </div>
-            <div>
-              <div className="text-4xl mb-4">🤝</div>
-              <h4 className="font-bebas text-lg text-[#f0ebd8] mb-2 tracking-wide">Teamwork</h4>
-              <p className="text-[#748cab] text-sm">
+            <div className="group hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🤝</div>
+              <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Teamwork</h4>
+              <p className="text-[#748cab] leading-relaxed">
                 Gemeinsam sind wir stärker - sowohl intern als auch mit unseren Kunden.
               </p>
             </div>
@@ -148,7 +167,7 @@ const Team = () => {
         {/* CTA */}
         <div className="text-center">
           <a
-            href="#kontakt"
+            href="/kontakt"
             className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-full shadow-xl tracking-widest hover:scale-105 transition-all duration-300 hover:shadow-2xl"
           >
             Lerne uns kennen

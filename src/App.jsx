@@ -5,6 +5,7 @@ import Datenschutz from "./pages/legal/Datenschutz.jsx";
 import AGB from "./pages/legal/AGB.jsx";
 import Karriere from "./pages/Karriere.jsx";
 import FAQ from "./pages/FAQ.jsx";
+import Kontakt from "./pages/Kontakt.jsx";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Route path="/agb" element={<AGB />} />
       <Route path="/karriere" element={<Karriere />} />
       <Route path="/faq" element={<FAQ />} />
-      
+      <Route path="/kontakt" element={<Kontakt />} />
     </Routes>
   );
 }
