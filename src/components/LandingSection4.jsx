@@ -152,27 +152,7 @@ const LandingSection4 = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="bg-[#3e5c76]/20 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-[#748cab]/30 mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">50+</div>
-              <p className="text-[#748cab] text-sm sm:text-base">Projekte</p>
-            </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">98%</div>
-              <p className="text-[#748cab] text-sm sm:text-base">Kundenzufriedenheit</p>
-            </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">24/7</div>
-              <p className="text-[#748cab] text-sm sm:text-base">Support</p>
-            </div>
-            <div>
-              <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">3 Jahre</div>
-              <p className="text-[#748cab] text-sm sm:text-base">Erfahrung</p>
-            </div>
-          </div>
-        </div>
+        
 
         {/* CTA */}
         <div className="text-center">
