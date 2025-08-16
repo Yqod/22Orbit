@@ -3,8 +3,8 @@ import React from "react";
 const teamMembers = [
   {
     id: 1,
-    name: "Alex Schmidt",
-    role: "CEO & Full-Stack Developer",
+    name: "Georg Reinicke ",
+    role: "Unser Entwickler und Teamleiter",
     description: "Leitet das Team und entwickelt sowohl Frontend als auch Backend mit Leidenschaft für sauberen Code.",
     skills: ["React", "Node.js", "Leadership"],
     image: "/team/alex.jpg",
