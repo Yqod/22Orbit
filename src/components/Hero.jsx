@@ -1,14 +1,27 @@
+import SplitText from "./SplitText";
 import React from "react";
 
 const Hero = () => (
   <section className="relative w-full flex flex-col items-center justify-center pt-60 pb-24 px-4">
     <div className="max-w-3xl mx-auto text-center">
-      <h1 className="font-bebas text-5xl sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8">
-        22Orbit -<p className="inline-block">Deine Webagentur</p>
-      </h1>
+      <SplitText
+        text="Deine Webagentur    -22Orbit- "
+        className="font-bebas text-5xl sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8"
+        delay={100}
+        duration={0.6}
+        ease="power3.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+      />
+      
       <p className="text-[#748cab] text-xl sm:text-2xl md:text-3xl font-light mb-8">
         Webseiten, Shops, Plugins und Software – individuell und passgenau für dein Business.
       </p>
+      
       <div className="relative z-[10001] flex justify-center">
         <a
           href="#leistungen"

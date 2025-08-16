@@ -5,8 +5,14 @@ import LandingSection1 from '../components/LandingSection1.jsx';
 import LandingSection2 from '../components/LandingSection2.jsx';
 import LandingSection3 from '../components/LandingSection3.jsx';
 import LandingSection4 from '../components/LandingSection4.jsx';  
+import Team from '../components/Team.jsx';
+import Footer from '../components/FooterLegal.jsx';
+import { useEffect } from 'react';
 
 function Landingpage() {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="bg-[#0d1321] w-full relative">
       {/* Particles als fixer Hintergrund */}
@@ -39,6 +45,8 @@ function Landingpage() {
         <LandingSection2 />
         <LandingSection3 />
         <LandingSection4 />
+        <Team />
+        <Footer />
       </div>
     </div>
   );
