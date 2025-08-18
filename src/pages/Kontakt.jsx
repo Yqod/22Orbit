@@ -14,7 +14,6 @@ const Kontakt = () => {
     user_company: '',
     user_phone: '',
     project_type: '',
-    budget: '',
     timeline: '',
     message: ''
   });
@@ -35,10 +34,10 @@ const Kontakt = () => {
 
     // Ersetze diese Werte mit deinen EmailJS Credentials
     emailjs.sendForm(
-      'YOUR_SERVICE_ID',        // Deine EmailJS Service ID
-      'YOUR_TEMPLATE_ID',       // Deine EmailJS Template ID
+      'service_liuqe88',        // Deine EmailJS Service ID
+      'template_g72mffv',       // Deine EmailJS Template ID
       form.current,
-      'YOUR_PUBLIC_KEY'         // Dein EmailJS Public Key
+      '1ORBuEvNYVGE3c6wv'         // Dein EmailJS Public Key
     )
     .then((result) => {
       console.log(result.text);
@@ -136,7 +135,7 @@ const Kontakt = () => {
   return (
     <>
     <Navbar />
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] py-24 sm:py-20 px-4">
+    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] py-28 sm:py-28 px-4">
           <div className="w-full max-w-7xl mx-auto">
               {/* Header */}
               <div className="text-center mb-16">

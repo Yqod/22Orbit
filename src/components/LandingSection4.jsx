@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
+// Beispiel für ein Bildimport
+
+
 const portfolioProjects = [
   {
     id: 1,
-    title: "E-Commerce Fashion Store",
+    title: "E-Commerce für Kristallhändler",
     category: "Online Shop",
     description: "Moderner Online-Shop mit Payment-Integration und Admin-Dashboard",
-    technologies: ["React", "Node.js", "Stripe", "SQLite"],
-    image: "/screenshots/project1.jpg", // Hier fügst du deine Screenshots ein
+    technologies: ["React", "TypeScript", "Node.js", "Express.js", "Stripe", "SQLite", "JWT"],
+    image: "/public/koenigskristall.png", // Hier fügst du deine Screenshots ein
     color: "from-purple-500/20 to-pink-500/20"
   },
   {
@@ -107,32 +110,32 @@ const LandingSection4 = () => {
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              {/* Project Image */}
-              <div className={`h-48 sm:h-56 bg-gradient-to-br ${project.color} relative overflow-hidden`}>
-                {/* Placeholder für Screenshot */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-4xl sm:text-6xl opacity-30">📱</div>
-                </div>
-                
-                {/* Overlay bei Hover */}
-                <div className={`absolute inset-0 bg-[#0d1321]/80 backdrop-blur-sm flex items-center justify-center transition-all duration-300 ${
-                  hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
-                }`}>
-                  <div className="text-center p-4">
-                    <div className="flex flex-wrap justify-center gap-2 mb-4">
-                      {project.technologies.map((tech, index) => (
-                        <span 
-                          key={index}
-                          className="px-2 py-1 bg-[#748cab]/20 text-[#f0ebd8] text-xs rounded-full border border-[#748cab]/30"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    
+             {/* Project Image */}
+                    <div className={`h-48 sm:h-56 bg-gradient-to-br ${project.color} relative overflow-hidden`}>
+                      <img
+                        src={project.image.startsWith("/") ? project.image : project.image.replace("../public", "")}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                      
+                      {/* Overlay bei Hover */}
+                      <div className={`absolute inset-0 bg-[#0d1321]/80 backdrop-blur-sm flex items-center justify-center transition-all duration-300 ${
+                        hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
+                      }`}>
+                        <div className="text-center p-4">
+                          <div className="flex flex-wrap justify-center gap-2 mb-4">
+                            {project.technologies.map((tech, index) => (
+                              <span 
+                                key={index}
+                                className="px-2 py-1 bg-[#748cab]/20 text-[#f0ebd8] text-xs rounded-full border border-[#748cab]/30"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                   </div>
-                </div>
-              </div>
 
               {/* Project Info */}
               <div className="p-4 sm:p-6">
