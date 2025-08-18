@@ -6,61 +6,61 @@ import React, { useState } from "react";
 const portfolioProjects = [
   {
     id: 1,
-    title: "E-Commerce für Kristallhändler",
+    title: "Online Shop für KOENIGSKRISTALL",
     category: "Online Shop",
     description: "Moderner Online-Shop mit Payment-Integration und Admin-Dashboard",
     technologies: ["React", "TypeScript", "Node.js", "Express.js", "Stripe", "SQLite", "JWT"],
-    image: "/public/koenigskristall.png", // Hier fügst du deine Screenshots ein
+    image: "koenigskristall.png", // Hier fügst du deine Screenshots ein
     color: "from-purple-500/20 to-pink-500/20"
   },
   {
     id: 2,
     title: "Restaurant Landing Page",
-    category: "Landing Page",
+    category: "Website",
     description: "Responsive Landing Page mit Reservierungssystem und interaktiver Karte",
     technologies: ["React", "TypeScript", "Express.js"],
-    image: "/screenshots/project2.jpg", // Hier fügst du deine Screenshots ein
+    image: "restaurant.png",
     color: "from-orange-500/20 to-red-500/20"
   },
   {
     id: 3,
-    title: "SaaS Dashboard",
+    title: "Interaktive Website für Sportclub",
     category: "Web App",
-    description: "Analytics Dashboard mit Echtzeit-Daten und Benutzer-Management",
-    technologies: ["React", "Node.js", "JWT", "Sequelize"],
-    image: "/screenshots/project3.jpg", // Hier fügst du deine Screenshots ein
+    description: "Interaktive Plattform für Sportclub",
+    technologies: ["React", "Node.js", "JWT", "SQLite"],
+    image: "sportsclub.png",
     color: "from-blue-500/20 to-cyan-500/20"
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    category: "Landing Page",
-    description: "Kreative Portfolio-Website für einen Fotografen mit Galerie",
-    technologies: ["React", "CSS", "JavaScript"],
-    image: "/screenshots/project4.jpg", // Hier fügst du deine Screenshots ein
+    title: "Online Shop für gebrauchte Mobilgeräte",
+    category: "Online Shop",
+    description: "E-Commerce-Plattform für gebrauchte Mobilgeräte mit Zahlungsintegration",
+    technologies: ["React", "TypeScript", "Stripe", "Node.js", "Express.js"],
+    image: "mobiletechlab.png",
     color: "from-green-500/20 to-emerald-500/20"
   },
   {
     id: 5,
-    title: "Booking System",
-    category: "Web App",
-    description: "Terminbuchungssystem für Dienstleister mit Kalender-Integration",
-    technologies: ["React", "Node.js", "SQLite", "Express.js"],
-    image: "/screenshots/project5.jpg", // Hier fügst du deine Screenshots ein
+    title: "Landing Page für Zahnarztpraxis",
+    category: "Website",
+    description: "Moderne Landing Page mit Kontaktformular",
+    technologies: ["React", "TypeScript", "Express.js", "SQLite"],
+    image: "gamadental.png",
     color: "from-yellow-500/20 to-orange-500/20"
   },
   {
     id: 6,
-    title: "Inventory Management",
-    category: "Custom Software",
-    description: "Maßgeschneiderte Lagerverwaltung mit Barcode-Scanner Integration",
-    technologies: ["React", "Rust", "TypeScript", "SQLite"],
-    image: "/screenshots/project6.jpg", // Hier fügst du deine Screenshots ein
+    title: "Landing Page für Kreativagentur",
+    category: "Landing Page",
+    description: "Moderne Landing Page für eine Kreativagentur mit Portfolio-Integration",
+    technologies: ["React", "TypeScript", "Express.js", "SQLite"],
+    image: "hki.png",
     color: "from-indigo-500/20 to-purple-500/20"
   }
 ];
 
-const categories = ["Alle", "Landing Page", "Online Shop", "Web App", "Custom Software"];
+const categories = ["Alle", "Landing Page", "Online Shop", "Web App", "Website"];
 
 const LandingSection4 = () => {
   const [activeCategory, setActiveCategory] = useState("Alle");
