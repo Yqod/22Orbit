@@ -20,7 +20,7 @@ const features = [
 
 function LandingSection1() {
   return (
-    <section id="section1" className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-8 sm:py-28 px-4">
+    <section id="section1" className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-24 sm:py-28 px-4">
       <div className="w-full max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
