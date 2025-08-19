@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CTA = () => (
-  <section className="min-h-[60vh] bg-gradient-to-b from-[#0d1321] via-[#1d2d44]  flex flex-col items-center justify-center py-26 sm:py-28 px-4">
+  <section className="min-h-[70vh] bg-gradient-to-b from-[#0d1321] via-[#1d2d44]  flex flex-col items-center justify-center py-34 sm:py-30 px-4">
     <div className="w-full max-w-4xl mx-auto text-center">
       <div className="mb-12 sm:mb-16">
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
