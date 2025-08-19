@@ -5,8 +5,11 @@ import Navbar from "../components/Navbar";
 
 const Kontakt = () => {
     useEffect(() => {
-          window.scrollTo(0, 0);
-        }, []);
+    // Warte bis die Komponente vollständig gerendert ist
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  }, []);
   const form = useRef();
   const [formData, setFormData] = useState({
     user_name: '',

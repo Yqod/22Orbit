@@ -20,7 +20,7 @@ const features = [
 
 function LandingSection1() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section id="section1" className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-8 sm:py-28 px-4">
       <div className="w-full max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
@@ -49,15 +49,7 @@ function LandingSection1() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <a
-            href="#kontakt"
-            className="inline-block bg-gradient-to-r from-[#3e5c76] to-[#1d2d44] text-[#f0ebd8] font-bebas text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-full shadow-xl tracking-widest hover:scale-105 transition-all duration-300 hover:shadow-2xl"
-          >
-            Projekt starten
-          </a>
-        </div>
+        
       </div>
     </section>
   );

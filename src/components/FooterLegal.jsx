@@ -45,8 +45,12 @@ const FooterLegal = () => {
               Individuell, innovativ und mit Leidenschaft entwickelt.
             </p>
             <div className="text-[#748cab] text-sm">
-              <p>E-Mail: info@22orbit.de</p>
-              <p>Tel: +49 (0) 123 456789</p>
+              <p>
+                E-Mail: <a href="mailto:info@22orbit.de" className="hover:text-[#f0ebd8] transition-colors underline">info@22orbit.de</a>
+              </p>
+              <p>
+                Tel: <a href="tel:+4917664637327" className="hover:text-[#f0ebd8] transition-colors underline">+4917664637327</a>
+              </p>
             </div>
           </div>
 

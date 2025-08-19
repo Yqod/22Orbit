@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
+
 const reasons = [
   {
     icon: "💡",
@@ -142,7 +143,7 @@ const LandingSection2 = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
       <div className="w-full max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-4 sm:mb-6">
@@ -183,17 +184,9 @@ const LandingSection2 = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-12 sm:mt-16">
-          <a
-            href="#kontakt"
-            className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-full shadow-xl tracking-widest hover:scale-105 transition-all duration-300 hover:shadow-2xl"
-          >
-            Lass uns sprechen
-          </a>
+        
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

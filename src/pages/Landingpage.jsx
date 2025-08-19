@@ -4,17 +4,22 @@ import Navbar from '../components/Navbar.jsx';
 import LandingSection1 from '../components/LandingSection1.jsx';
 import LandingSection2 from '../components/LandingSection2.jsx';
 import LandingSection3 from '../components/LandingSection3.jsx';
-import LandingSection4 from '../components/LandingSection4.jsx';  
+import LandingSection4 from '../components/LandingSection4.jsx'; 
+import LandingSection5 from '../components/LandingSection5.jsx'; 
 import Team from '../components/Team.jsx';
 import Footer from '../components/FooterLegal.jsx';
+import CTA from '../components/CTA.jsx';
 import { useEffect } from 'react';
 
 function Landingpage() {
   useEffect(() => {
+    // Warte bis die Komponente vollständig gerendert ist
+    setTimeout(() => {
       window.scrollTo(0, 0);
-    }, []);
+    }, 0);
+  }, []);
   return (
-    <div className="bg-[#0d1321] w-full relative">
+    <div className="bg-[#0d1321] w-full relative scroll-smooth">
       {/* Particles als fixer Hintergrund */}
       <div className="fixed inset-0 w-full h-full z-[9999] pointer-events-none">
         <Particles
@@ -44,10 +49,13 @@ function Landingpage() {
         <LandingSection1 />
         <LandingSection2 />
         <LandingSection3 />
+        
         <LandingSection4 />
+        <LandingSection5 />
         <Team />
+        <CTA />
         <Footer />
-      </div>
+        </div>
     </div>
   );
 }

@@ -50,7 +50,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="team-section" className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section id="team-section" className="min-h-screen bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
       <div className="w-full max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
@@ -162,16 +162,6 @@ const Team = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <a
-            href="/kontakt"
-            className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-full shadow-xl tracking-widest hover:scale-105 transition-all duration-300 hover:shadow-2xl"
-          >
-            Lerne uns kennen
-          </a>
         </div>
       </div>
     </section>
