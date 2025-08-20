@@ -5,14 +5,14 @@ const teamMembers = [
     id: 1,
     name: "Georg Reinicke ",
     role: "Unser Entwickler und Teamleiter",
-    description: "Leitet das Team und entwickelt sowohl Frontend als auch Backend mit Leidenschaft für sauberen Code.",
+    description: "Leitet das Team und entwickelt mit Leidenschaft für innovative Webanwendungen.",
     skills: ["React", "Node.js", "Leadership"],
     image: "/team/alex.jpg",
     color: "from-blue-500/20 to-indigo-500/20"
   },
   {
     id: 2,
-    name: "Sarah Weber",
+    name: "Maja Bremer",
     role: "Frontend Specialist", 
     description: "Verwandelt Designs in perfekte, responsive Benutzeroberflächen mit einem Auge für Details.",
     skills: ["React", "TypeScript", "CSS"],
@@ -21,7 +21,7 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Marcus Klein",
+    name: "Kozato Kaizo",
     role: "Backend Engineer",
     description: "Sorgt für performante APIs und sichere Datenbanken - unser Experte für Server-Architektur.",
     skills: ["Node.js", "Express.js", "SQLite"],
@@ -30,7 +30,7 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Lisa Müller",
+    name: "Annabell Lenz",
     role: "UI/UX Designer",
     description: "Entwirft benutzerfreundliche Interfaces und sorgt für optimale User Experience.",
     skills: ["Figma", "Design Systems", "UX Research"],
@@ -39,7 +39,7 @@ const teamMembers = [
   },
   {
     id: 5,
-    name: "Tom Fischer",
+    name: "Julius Behrend",
     role: "DevOps & Security",
     description: "Kümmert sich um Deployment, Performance-Optimierung und die Sicherheit unserer Systeme.",
     skills: ["Rust", "Security", "Performance"],
@@ -95,21 +95,21 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Member Info */}
-              <div className="p-4 h-32 flex flex-col justify-between">
-                <div>
-                  <h3 className="font-bebas text-lg text-[#f0ebd8] mb-1 tracking-wide">
-                    {member.name}
-                  </h3>
-                  <p className="text-[#748cab] font-medium text-sm mb-2">
-                    {member.role}
-                  </p>
-                </div>
-                <p className="text-[#748cab] text-xs leading-relaxed line-clamp-3">
-                  {member.description}
-                </p>
-              </div>
+                {/* Member Info */}
+                  <div className="p-4 flex flex-col justify-between min-h-[140px]">
+                    <div>
+                      <h3 className="font-bebas text-lg text-[#f0ebd8] mb-1 tracking-wide line-clamp-1">
+                        {member.name}
+                      </h3>
+                      <p className="text-[#748cab] font-medium text-sm mb-2 line-clamp-2">
+                        {member.role}
+                      </p>
+                    </div>
+                    <p className="text-[#748cab] text-xs leading-relaxed line-clamp-4">
+                      {member.description}
+                    </p>
+                  </div>
+              
             </div>
           ))}
         </div>

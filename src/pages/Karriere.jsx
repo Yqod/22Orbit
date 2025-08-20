@@ -1,12 +1,15 @@
 import React from "react";
 import { useEffect } from "react";
+import Navbar from "../components/Navbar";
 
 const Karriere = () => {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <>
+    <Navbar />
+    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-24 sm:py-24 px-4">
       <div className="w-full max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
@@ -165,6 +168,7 @@ const Karriere = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

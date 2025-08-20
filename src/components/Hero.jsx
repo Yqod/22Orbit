@@ -2,11 +2,11 @@ import SplitText from "./SplitText";
 import React from "react";
 
 const Hero = () => (
-  <section className="relative w-full flex flex-col items-center justify-center pt-80 sm:pt-60 pb-40 sm:pb-24 px-4">
+  <section className="relative w-full flex flex-col items-center justify-center pt-80 sm:pt-60 pb-40 sm:pb-24 px-4 ">
     <div className="max-w-3xl mx-auto text-center">
-      <div className="font-bebas text-5xl sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8">
+      <div className="font-bebas text-[2.7rem] sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8 whitespace-nowrap">
         <SplitText
-          text="Deine Webagentur"
+          text=" Deine Webagentur"
           delay={100}
           duration={0.6}
           ease="power3.out"

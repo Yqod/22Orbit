@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import Navbar from "../components/Navbar";
 
 const faqData = [
   {
@@ -94,7 +95,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-start py-12 sm:py-20 px-4">
+    <>
+    <Navbar />
+    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-start py-24 sm:py-24 px-4">
       <div className="w-full max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
@@ -102,7 +105,7 @@ const FAQ = () => {
             Häufige Fragen
           </h1>
           <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light max-w-4xl mx-auto px-4">
-            Hier findest du Antworten auf die wichtigsten Fragen rund um unsere Services, 
+            Hier findest du Antworten auf die wichtigsten Fragen rund um unsere Services,
             Preise und den Entwicklungsprozess.
           </p>
         </div>
@@ -113,11 +116,9 @@ const FAQ = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bebas text-sm sm:text-base tracking-wide transition-all duration-300 ${
-                activeCategory === category
+              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bebas text-sm sm:text-base tracking-wide transition-all duration-300 ${activeCategory === category
                   ? "bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] shadow-lg"
-                  : "bg-[#3e5c76]/20 text-[#748cab] hover:bg-[#3e5c76]/40 hover:text-[#f0ebd8]"
-              }`}
+                  : "bg-[#3e5c76]/20 text-[#748cab] hover:bg-[#3e5c76]/40 hover:text-[#f0ebd8]"}`}
             >
               {category}
             </button>
@@ -146,17 +147,13 @@ const FAQ = () => {
                   </h3>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className={`w-8 h-8 rounded-full bg-[#748cab]/20 flex items-center justify-center transition-transform duration-300 ${
-                    openFAQ === faq.id ? 'rotate-45' : 'rotate-0'
-                  }`}>
+                  <div className={`w-8 h-8 rounded-full bg-[#748cab]/20 flex items-center justify-center transition-transform duration-300 ${openFAQ === faq.id ? 'rotate-45' : 'rotate-0'}`}>
                     <span className="text-[#f0ebd8] text-xl font-light">+</span>
                   </div>
                 </div>
               </button>
-              
-              <div className={`transition-all duration-300 ease-in-out ${
-                openFAQ === faq.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-              } overflow-hidden`}>
+
+              <div className={`transition-all duration-300 ease-in-out ${openFAQ === faq.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
                 <div className="px-6 sm:px-8 pb-6 sm:pb-8">
                   <div className="border-t border-[#748cab]/20 pt-6">
                     <p className="text-[#748cab] leading-relaxed">
@@ -175,7 +172,7 @@ const FAQ = () => {
             Deine Frage nicht dabei?
           </h2>
           <p className="text-[#748cab] text-lg mb-6 max-w-2xl mx-auto">
-            Kein Problem! Schreib uns einfach eine Nachricht und wir antworten dir 
+            Kein Problem! Schreib uns einfach eine Nachricht und wir antworten dir
             so schnell wie möglich. Keine Frage ist zu klein oder zu groß.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -195,6 +192,7 @@ const FAQ = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

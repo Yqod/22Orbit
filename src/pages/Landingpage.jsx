@@ -18,7 +18,8 @@ function Landingpage() {
       window.scrollTo(0, 0);
     }, 0);
   }, []);
-  return (
+
+ return (
     <div className="bg-[#0d1321] w-full relative scroll-smooth">
       {/* Particles als fixer Hintergrund */}
       <div className="fixed inset-0 w-full h-full z-[9999] pointer-events-none">
