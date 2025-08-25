@@ -1,9 +1,11 @@
 import SplitText from "./SplitText";
 import React from "react";
+  
 
 const Hero = () => (
   <section className="relative w-full flex flex-col items-center justify-center pt-80 sm:pt-60 pb-40 sm:pb-24 px-4 ">
     <div className="max-w-3xl mx-auto text-center">
+      
       <div className="font-bebas text-[2.7rem] sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8 whitespace-nowrap">
         <SplitText
           text=" Deine Webagentur"
@@ -35,7 +37,7 @@ const Hero = () => (
       <p className="text-[#748cab] text-xl sm:text-2xl md:text-3xl font-light mb-8">
         Webseiten, Shops, Plugins und Software – individuell und passgenau für dein Business.
       </p>
-      
+
       <div className="relative z-[10001] flex justify-center">
         <a
           href="#section1"

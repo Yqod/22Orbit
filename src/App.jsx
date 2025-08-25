@@ -6,12 +6,14 @@ import AGB from "./pages/legal/AGB.jsx";
 import Karriere from "./pages/Karriere.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Kontakt from "./pages/Kontakt.jsx";
+import Pricing from "./pages/Pricing.jsx";
 
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Landingpage />} />
+      <Route path="/preisliste" element={<Pricing />} />
       <Route path="/impressum" element={<Impressum />} />
       <Route path="/datenschutz" element={<Datenschutz />} />
       <Route path="/agb" element={<AGB />} />
