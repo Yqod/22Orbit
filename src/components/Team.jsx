@@ -6,13 +6,13 @@ const teamMembers = [
     name: "Georg Reinicke ",
     role: "Unser Entwickler und Teamleiter",
     description: "Leitet das Team und entwickelt mit Leidenschaft für innovative Webanwendungen.",
-    skills: ["React", "Node.js", "Leadership"],
+    skills: ["React", "Node.js"],
     image: "/team/alex.jpg",
     color: "from-blue-500/20 to-indigo-500/20"
   },
   {
     id: 2,
-    name: "Maja Bremer",
+    name: "Maja Liebemann",
     role: "Frontend Specialist", 
     description: "Verwandelt Designs in perfekte, responsive Benutzeroberflächen mit einem Auge für Details.",
     skills: ["React", "TypeScript", "CSS"],
