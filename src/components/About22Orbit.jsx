@@ -1,7 +1,7 @@
 import React from "react";
 
 const About22Orbit = () => (
-  <section className="w-full bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] py-20 px-4 my-12 flex items-center justify-center">
+  <section id="About22Orbit" className="w-full bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] py-20 px-4 my-12 flex items-center justify-center">
     <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
       {/* Bildbereich */}
       <div className="flex-1 flex justify-end items-center">
