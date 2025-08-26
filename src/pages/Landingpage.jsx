@@ -10,6 +10,7 @@ import Team from '../components/Team.jsx';
 import Footer from '../components/FooterLegal.jsx';
 import CTA from '../components/CTA.jsx';
 import { useEffect } from 'react';
+import About22Orbit from '../components/About22Orbit.jsx';
 
 function Landingpage() {
   useEffect(() => {
@@ -47,6 +48,7 @@ function Landingpage() {
       {/* Content darunter */}
       <div className="relative z-10">
         <Hero />
+        <About22Orbit />
         <LandingSection1 />
         <LandingSection2 />
         <LandingSection3 />

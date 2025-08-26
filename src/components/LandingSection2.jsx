@@ -143,7 +143,7 @@ const LandingSection2 = () => {
   }, []);
 
   return (
-    <section className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
       <div className="w-full max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-4 sm:mb-6">

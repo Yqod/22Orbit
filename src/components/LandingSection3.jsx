@@ -30,8 +30,8 @@ const partnershipSteps = [
 
 const LandingSection3 = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
-      <div className="w-full max-w-7xl mx-auto">
+    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+      <div className="w-full max-w-7xl mx-auto my-16">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">

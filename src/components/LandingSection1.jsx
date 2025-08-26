@@ -20,36 +20,38 @@ const features = [
 
 function LandingSection1() {
   return (
-    <section id="section1" className="min-h-screen bg-gradient-to-b from-[#0d1321] to-[#1d2d44] flex flex-col items-center justify-center py-24 sm:py-28 px-4">
-      <div className="w-full max-w-6xl mx-auto text-center">
-        {/* Header */}
-        <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
-          Unsere Stärken
-        </h2>
-        <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
-          Wir verbinden Kreativität mit technischer Exzellenz und schaffen digitale Lösungen, 
-          die nicht nur gut aussehen, sondern auch perfekt funktionieren.
-        </p>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto mb-12 sm:mb-16">
+    <section
+      id="section1"
+      className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex items-center justify-center my-12 py-24 sm:py-28 px-4"
+    >
+      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+        {/* Textbereich links, auf Mobil zentriert */}
+        <div className="flex-1 w-full max-w-xl mx-auto text-center md:max-w-none md:mx-0 md:text-left mb-12 md:mb-0">
+          <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
+            Unsere Stärken
+          </h2>
+          <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light mb-6 leading-relaxed">
+            Wir verbinden Kreativität mit technischer Exzellenz und schaffen digitale Lösungen, 
+            die nicht nur gut aussehen, sondern auch perfekt funktionieren.
+          </p>
+        </div>
+        {/* Features rechts untereinander */}
+        <div className="flex-1 flex flex-col gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-[#748cab]/30 hover:border-[#748cab]/60 hover:bg-[#3e5c76]/30 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center"
+              className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-4 sm:p-5 border border-[#748cab]/30 hover:border-[#748cab]/60 hover:bg-[#3e5c76]/30 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center"
             >
-              <div className="text-4xl sm:text-5xl mb-4">{feature.icon}</div>
-              <h3 className="font-bebas text-lg sm:text-xl text-[#f0ebd8] mb-3 tracking-wide">
+              <div className="text-2xl sm:text-3xl mb-2">{feature.icon}</div>
+              <h3 className="font-bebas text-base sm:text-lg text-[#f0ebd8] mb-2 tracking-wide">
                 {feature.title}
               </h3>
-              <p className="text-[#748cab] text-sm sm:text-base leading-relaxed">
+              <p className="text-[#748cab] text-xs sm:text-sm leading-relaxed">
                 {feature.desc}
               </p>
             </div>
           ))}
         </div>
-
-        
       </div>
     </section>
   );
