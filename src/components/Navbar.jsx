@@ -35,9 +35,9 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: "Home", href: "/", type: "home" },
     { label: "Unser Team", href: "team-section", type: "scroll" },
     { label: "Portfolio", href: "portfolio-section", type: "scroll" },
+    { label: "Preise", href: "/preisliste", type: "route" },
     { label: "Kontakt", href: "/kontakt", type: "route" },
   ];
 

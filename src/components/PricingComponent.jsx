@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import HostingPricing from "./HostingPrice";
 import Navbar from "./Navbar";
 import WebsitePflege from "./websitepflege";
+import FooterLegal from "./FooterLegal";
 
 const pricingData = [
     
@@ -160,7 +161,7 @@ const PricingComponent = () => {
   return (
     <>
       <Navbar />
-      <section className="min-h-[60vh] bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-20 px-4">
+      <section id ="price" className="min-h-[60vh] bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-20 px-4">
         <div className="w-full max-w-7xl mx-auto mt-16">
           <div className="text-center mb-16">
             <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
@@ -231,6 +232,7 @@ const PricingComponent = () => {
       </section>
       <HostingPricing />
       <WebsitePflege />
+      <FooterLegal />
     </>
   );
 };
