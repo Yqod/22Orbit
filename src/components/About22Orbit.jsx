@@ -29,7 +29,7 @@ const About22Orbit = () => (
           <h2 className="font-bebas text-4xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8">
             Wer wir sind?
           </h2>
-          <p className="text-[#748cab] text-base font-light leading-relaxed">
+          <p className="text-[#748cab] text-base text-lg font-light leading-relaxed">
             <span className="font-bebas text-xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, gegründet von zwei Freunden mit einer großen Liebe zur <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
             <br /><br />
             
