@@ -11,7 +11,8 @@ const portfolioProjects = [
     description: "Moderner Online-Shop mit Payment-Integration und Admin-Dashboard",
     technologies: ["React", "TypeScript", "Node.js", "Express.js", "Stripe", "SQLite", "JWT"],
     image: "koenigskristall.png", // Hier fügst du deine Screenshots ein
-    color: "from-purple-500/20 to-pink-500/20"
+    color: "from-purple-500/20 to-pink-500/20",
+    url: "https://www.koenigskristall.de"
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const portfolioProjects = [
     description: "Responsive Landing Page mit Reservierungssystem und interaktiver Karte",
     technologies: ["React", "TypeScript", "Express.js"],
     image: "restaurant.png",
-    color: "from-orange-500/20 to-red-500/20"
+    color: "from-orange-500/20 to-red-500/20",
+    url: "https://www.sperrys.com/"
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const portfolioProjects = [
     description: "Interaktive Plattform für Sportclub",
     technologies: ["React", "Node.js", "JWT", "SQLite"],
     image: "sportsclub.png",
-    color: "from-blue-500/20 to-cyan-500/20"
+    color: "from-blue-500/20 to-cyan-500/20",
+    url: "https://www.kodeclubs.com/"
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ const portfolioProjects = [
     description: "E-Commerce-Plattform für gebrauchte Mobilgeräte mit Zahlungsintegration",
     technologies: ["React", "TypeScript", "Stripe", "Node.js", "Express.js"],
     image: "mobiletechlab.png",
-    color: "from-green-500/20 to-emerald-500/20"
+    color: "from-green-500/20 to-emerald-500/20",
+    url: "https://shop.mobiletechlab.ca/"
   },
   {
     id: 5,
@@ -47,7 +51,8 @@ const portfolioProjects = [
     description: "Moderne Landing Page mit Kontaktformular",
     technologies: ["React", "TypeScript", "Express.js", "SQLite"],
     image: "gamadental.png",
-    color: "from-yellow-500/20 to-orange-500/20"
+    color: "from-yellow-500/20 to-orange-500/20",
+    url: "https://gamadental-ochre.vercel.app/"
   },
   {
     id: 6,
@@ -56,7 +61,8 @@ const portfolioProjects = [
     description: "Moderne Landing Page für eine Kreativagentur mit Portfolio-Integration",
     technologies: ["React", "TypeScript", "Express.js", "SQLite"],
     image: "hki.png",
-    color: "from-indigo-500/20 to-purple-500/20"
+    color: "from-indigo-500/20 to-purple-500/20",
+    url: "https://hki.paris/en/"
   }
 ];
 
@@ -104,8 +110,11 @@ const LandingSection4 = () => {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
           {filteredProjects.map((project) => (
-            <div
+            <a
               key={project.id}
+               href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
               className="group relative bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl overflow-hidden border border-[#748cab]/30 hover:border-[#748cab]/60 transition-all duration-300 hover:scale-105"
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
@@ -151,7 +160,7 @@ const LandingSection4 = () => {
                   {project.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import HostingPricing from "./HostingPrice";
 import Navbar from "./Navbar";
+import WebsitePflege from "./websitepflege";
 
 const pricingData = [
     
@@ -39,7 +40,7 @@ const pricingData = [
           "Individuelle Features",
           "Performance-Optimierung",
           "SEO-Komplettpaket",
-          "Erweiterung auf bis zu 3 Seiten"
+          
         ]
       }
     ]
@@ -229,6 +230,7 @@ const PricingComponent = () => {
         </div>
       </section>
       <HostingPricing />
+      <WebsitePflege />
     </>
   );
 };
