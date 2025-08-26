@@ -40,9 +40,13 @@ const WebsitePflege = () => (
   <section className="min-h-[40vh] bg-gradient-to-b from-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-20 px-4">
     <div className="w-full max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="font-bebas text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
-          Website-Pflege & Wartung
-        </h2>
+        <h2 className="font-bebas text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-2">
+            Website-Pflege & Wartung
+          </h2>
+          <p className="text-[#f0ebd8] text-lg sm:text-xl font-light mb-2">
+            (optional)
+          </p>
+        
         <p className="text-[#748cab] text-lg sm:text-xl font-light max-w-3xl mx-auto px-4">
           Bleibe sorgenfrei: Wir kümmern uns um Updates, Sicherheit und Support – wähle das passende Paket für deine Website.
         </p>

@@ -5,7 +5,7 @@ const teamMembers = [
     id: 1,
     name: "Georg Reinicke ",
     role: "Unser Entwickler und Teamleiter",
-    description: "Leitet das Team und entwickelt mit Leidenschaft für innovative Webanwendungen.",
+    description: "Leitet das Team und entwickelt mit Leidenschaft innovative Webanwendungen.",
     skills: ["React", "Node.js"],
     image: "/team/alex.jpg",
     color: "from-blue-500/20 to-indigo-500/20"

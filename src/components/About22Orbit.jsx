@@ -16,7 +16,7 @@ const About22Orbit = () => (
         <img
           src="astronautNachUnten.png"
           alt="Astronaut mit schaut nach unten"
-          className="block md:hidden w-[220px] max-w-full object-contain drop-shadow-2xl mr-40"
+          className="block md:hidden w-[220px] max-w-full object-contain drop-shadow-2xl mr-37"
           style={{ pointerEvents: "none" }}
         />
       </div>
