@@ -51,9 +51,10 @@ function Landingpage() {
         <About22Orbit />
         <LandingSection1 />
         <LandingSection2 />
-        <LandingSection3 />
+        
         
         <LandingSection4 />
+        <LandingSection3 />
         <LandingSection5 />
         <Team />
         <CTA />

@@ -22,7 +22,7 @@ function LandingSection1() {
   return (
     <section
       id="section1"
-      className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex items-center justify-center my-12 py-24 sm:py-28 px-4"
+      className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex items-center justify-center my-0 py-24 sm:py-28 px-4"
     >
       <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
         {/* Textbereich links, auf Mobil zentriert */}

@@ -9,7 +9,7 @@ const HkiPortfolio = () => (
           HKI Kreativagentur
         </h2>
         <span className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-xs px-4 py-2 rounded-full mb-4 tracking-widest shadow">
-          Unternehmens Website • Portfolio
+          Unternehmenswebsite • Portfolio
         </span>
         <p className="text-[#748cab] text-base sm:text-lg font-light mb-8 leading-relaxed max-w-md">
           Moderne Website für eine Kreativagentur mit Portfolio-Integration und einzigartigem Design.

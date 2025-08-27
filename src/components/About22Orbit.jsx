@@ -1,12 +1,12 @@
 import React from "react";
 
 const About22Orbit = () => (
-  <section id="About22Orbit" className="w-full bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] py-20 px-4 my-12 flex items-center justify-center">
+  <section id="About22Orbit" className="w-full bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] py-20 px-4 my-0 flex items-center justify-center pt-28">
     <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-0 md:gap-20">
       {/* Mobile: Überschrift, Bild, Text */}
-      <div className="w-full flex flex-col md:hidden items-center">
+      <div className="block md:hidden w-full max-w-xl mx-auto text-center mb-12">
         <h2 className="font-bebas text-4xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
-          Wer wir sind?
+          Über uns.
         </h2>
         <img
           src="astronautNachUnten.png"
@@ -14,9 +14,8 @@ const About22Orbit = () => (
           className="w-[220px] max-w-full object-contain drop-shadow-2xl mb-6"
           style={{ pointerEvents: "none", marginRight: "32px" }}
         />
-        <p className="text-[#748cab] text-base font-light leading-relaxed">
+        <p className="text-[#748cab] text-lg font-light mb-6 leading-relaxed">
           <span className="font-bebas text-xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, gegründet von zwei Freunden mit einer großen Liebe zur <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
-          
         </p>
       </div>
       {/* Desktop: Bild und Text nebeneinander */}
@@ -30,15 +29,14 @@ const About22Orbit = () => (
       </div>
       <div className="flex-1 w-full max-w-xl mx-auto text-center md:max-w-none md:mx-0 md:text-left px-4 py-8 sm:px-0 sm:py-0 hidden md:block">
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl text-[#f0ebd8] font-bold tracking-widest mb-6 drop-shadow-lg">
-          Wer wir sind ? 
+          Über uns. 
         </h2>
         <p className="text-[#748cab] text-lg sm:text-2xl font-light mb-6 leading-relaxed">
           <span className="font-bebas text-2xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-2xl text-[#f0ebd8]">Magdeburgs</span>, gegründet von zwei Freunden mit einer großen Liebe zur <span className="font-bebas text-2xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
-          
         </p>
       </div>
     </div>
   </section>
 );
 
-export default About22Orbit;  
+export default About22Orbit;

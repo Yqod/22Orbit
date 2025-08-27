@@ -4,33 +4,33 @@ import React, { useRef, useEffect } from "react";
 const reasons = [
   {
     icon: "💡",
-    title: "Leidenschaft für Code",
-    description: "Software-Entwicklung ist unsere Passion. Jede Zeile Code wird mit Herzblut geschrieben."
+    title: "Echte Leidenschaft",
+    description: "Wir lieben, was wir tun – und das merkt man an jedem Projekt. Persönlich, engagiert und zuverlässig."
   },
   {
     icon: "🚀",
-    title: "Innovation im Fokus",
-    description: "Wir setzen auf modernste Technologien und kreative Ansätze für deine Projekte."
+    title: "Innovativ & modern",
+    description: "Deine Website wird mit aktuellen Technologien und frischen Ideen umgesetzt – damit du immer einen Schritt voraus bist."
   },
   {
     icon: "🎯",
-    title: "Maßgeschneidert",
-    description: "Individuelle Lösungen, die perfekt zu deinem Business und deinen Zielen passen."
+    title: "Individuell für dein Unternehmen",
+    description: "Wir entwickeln Lösungen, die genau zu deinem Unternehmen und deinen Zielen passen – keine Website von der Stange."
   },
   {
     icon: "⚡",
-    title: "Schnell & Zuverlässig",
-    description: "Effiziente Entwicklung ohne Kompromisse bei Qualität und Performance."
+    title: "Schnell online",
+    description: "Kurze Umsetzungszeiten, klare Kommunikation und ein reibungsloser Ablauf – damit du schnell startest."
   },
   {
     icon: "🤝",
-    title: "Partnerschaftlich",
-    description: "Wir arbeiten eng mit dir zusammen – von der Idee bis zum erfolgreichen Launch."
+    title: "Partnerschaftlich & fair",
+    description: "Wir begleiten dich von der ersten Idee bis zur fertigen Website und sind auch danach für dich da."
   },
   {
     icon: "🔧",
-    title: "Full-Service",
-    description: "Alles aus einer Hand: Design, Development, Hosting und Support."
+    title: "Alles aus einer Hand",
+    description: "Design, Technik, Hosting und Support – du hast nur einen Ansprechpartner und wir kümmern uns um alles."
   }
 ];
 
@@ -143,7 +143,7 @@ const LandingSection2 = () => {
   }, []);
 
   return (
-    <section className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center  py-12 sm:py-20 px-4">
       <div className="w-full max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-4 sm:mb-6">

@@ -17,7 +17,7 @@ const SperryPortfolio = () => (
           Sperry´s Restaurant
         </h2>
         <span className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-xs px-4 py-2 rounded-full mb-3 tracking-widest shadow">
-          Unternehmens Website • Restaurant
+          Unternehmenswebsite • Restaurant
         </span>
         <p className="text-[#748cab] text-base sm:text-lg font-light mb-6 leading-relaxed max-w-md">
           Moderne Restaurant-Website mit Speisekarte und klarer Struktur.
