@@ -3,7 +3,7 @@ import React from "react";
   
 
 const Hero = () => (
-  <section className=" bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] relative w-full flex flex-col items-center justify-center pt-80 sm:pt-60 pb-40 sm:pb-24 px-4 ">
+  <section className=" bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] relative w-full flex flex-col items-center justify-center pt-60 sm:pt-60 pb-40 sm:pb-24 px-4 ">
     <div className="max-w-3xl mx-auto text-center">
       
       <div className="font-bebas text-[2.7rem] sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8 whitespace-nowrap">

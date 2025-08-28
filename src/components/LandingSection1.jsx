@@ -26,7 +26,7 @@ function LandingSection1() {
     >
       <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
         {/* Textbereich links, auf Mobil zentriert */}
-        <div className="flex-1 w-full max-w-xl mx-auto text-center md:max-w-none md:mx-0 md:text-left mb-12 md:mb-0">
+        <div className="flex-1 w-full max-w-xl mx-auto text-center md:max-w-none md:mx-0 md:text-left mb-4 md:mb-0">
           <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
             Unsere Stärken
           </h2>
@@ -46,7 +46,7 @@ function LandingSection1() {
               <h3 className="font-bebas text-base sm:text-lg text-[#f0ebd8] mb-2 tracking-wide">
                 {feature.title}
               </h3>
-              <p className="text-[#748cab] text-xs sm:text-sm leading-relaxed">
+              <p className="text-[#748cab] text-sm sm:text-base leading-relaxed">
                 {feature.desc}
               </p>
             </div>

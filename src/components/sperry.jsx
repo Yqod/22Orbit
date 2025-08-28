@@ -1,7 +1,7 @@
 import React from "react";
 
 const SperryPortfolio = () => (
-  <section className="w-full min-h-[400px]  flex items-center justify-center py-6 px-4 mb-24">
+  <section className="w-full min-h-[400px] bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex items-center justify-center py-6 px-4 mb-24">
     <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16">
       {/* Bildbereich */}
       <div className="flex-1 flex items-center justify-center">

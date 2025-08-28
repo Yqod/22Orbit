@@ -1,7 +1,7 @@
 import React from "react";
 
 const Koenigskristall = () => (
-  <section className="w-full min-h-[400px]  flex items-center justify-center py-10 px-4 mb-16">
+  <section className="w-full min-h-[400px] bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex items-center justify-center py-10 px-4 mb-16">
     <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20 p-0">
       {/* Bildbereich */}
       <div className="flex-1 flex items-center justify-center">

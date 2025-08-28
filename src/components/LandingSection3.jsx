@@ -3,25 +3,25 @@ import { Link } from "react-router-dom";
 
 const partnershipSteps = [
   {
-    step: "01",
+    step: "1",
     title: "Kennenlernen",
     description: "Wir hören zu, verstehen deine Vision und lernen dein Business kennen.",
     icon: "👋"
   },
   {
-    step: "02",
+    step: "2",
     title: "Gemeinsam planen",
     description: "Zusammen entwickeln wir die perfekte Strategie für dein Projekt.",
     icon: "🤝"
   },
   {
-    step: "03",
+    step: "3",
     title: "Transparent entwickeln",
     description: "Du bist immer im Loop – regelmäßige Updates und offene Kommunikation.",
     icon: "💻"
   },
   {
-    step: "04",
+    step: "4",
     title: "Langfristig betreuen",
     description: "Auch nach dem Launch sind wir dein Partner für Updates und Weiterentwicklung.",
     icon: "🚀"
@@ -53,7 +53,7 @@ const LandingSection3 = () => {
               )}
               
               {/* Step Card */}
-              <div className="relative bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-[#748cab]/30 hover:border-[#748cab]/60 transition-all duration-300 hover:scale-105 text-center z-10">
+              <div className="relative bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-[#748cab]/30 hover:border-[#748cab]/60 transition-all duration-300 hover:scale-105 text-center z-10 max-w-xs w-full mx-auto lg:max-w-[300px] h-full">
                 {/* Step Number */}
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#748cab] to-[#3e5c76] rounded-full text-[#f0ebd8] font-bebas text-xl font-bold mb-4">
                   {step.step}
