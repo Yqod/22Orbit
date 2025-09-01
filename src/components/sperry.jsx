@@ -8,7 +8,7 @@ const SperryPortfolio = () => (
         <img
           src="/sperryMockup.png"
           alt="Sperry Website Mockup"
-          className="w-full max-w-[400px]  object-contain"
+          className="w-full max-w-[480px]  object-contain"
         />
       </div>
       {/* Textbereich */}
