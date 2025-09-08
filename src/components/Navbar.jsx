@@ -100,26 +100,39 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden flex flex-col gap-1 w-6 h-6 justify-center"
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        <span
-          className={`h-0.5 bg-[#f0ebd8] transition-all duration-300 ${
-            isMenuOpen ? 'rotate-45 translate-y-1.5' : 'w-6'
-          }`}
-        ></span>
-        <span
-          className={`h-0.5 bg-[#f0ebd8] transition-all duration-300 ${
-            isMenuOpen ? 'opacity-0' : 'w-6'
-          }`}
-        ></span>
-        <span
-          className={`h-0.5 bg-[#f0ebd8] transition-all duration-300 ${
-            isMenuOpen ? '-rotate-45 -translate-y-1.5' : 'w-6'
-          }`}
-        ></span>
-      </button>
+  className="md:hidden flex items-center justify-center w-10 h-10"
+  onClick={toggleMenu}
+  aria-label={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
+>
+  {isMenuOpen ? (
+    // Close (X) Icon als SVG
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-8 h-8 text-[#f0ebd8]"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <line x1="6" y1="6" x2="18" y2="18" />
+      <line x1="6" y1="18" x2="18" y2="6" />
+    </svg>
+  ) : (
+    // Hamburger Icon
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-8 h-8 text-[#f0ebd8]"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <line x1="4" y1="7" x2="20" y2="7" />
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <line x1="4" y1="17" x2="20" y2="17" />
+    </svg>
+  )}
+</button>
 
       {/* Mobile Dropdown Menu */}
       <div
