@@ -5,18 +5,19 @@ const About22Orbit = () => (
     <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-0 md:gap-20">
       {/* Mobile: Überschrift, Bild, Text */}
       <div className="block md:hidden w-full max-w-xl mx-auto text-center mb-12">
-        <h2 className="font-bebas text-4xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-0">
+        <h2 className="font-bebas text-4xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
           Wer wir sind ? 
         </h2>
-        <img
+       
+        <p className="text-[#748cab] text-lg font-light mb-6 leading-relaxed">
+          <span className="font-bebas text-xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, gegründet von zwei Freunden mit einer großen Liebe zur <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
+        </p>
+         <img
           src="astronautNachUnten.png"
           alt="Astronaut schaut nach unten"
           className="w-[100px] max-w-full object-contain drop-shadow-2xl mb-0 mx-auto"
           style={{ pointerEvents: "none"}}
         />
-        <p className="text-[#748cab] text-lg font-light mb-6 leading-relaxed">
-          <span className="font-bebas text-xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, gegründet von zwei Freunden mit einer großen Liebe zur <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
-        </p>
       </div>
       {/* Desktop: Bild und Text nebeneinander */}
       <div className="flex-1 flex justify-end items-center hidden md:flex">
