@@ -1,37 +1,44 @@
 import React, { useRef, useEffect } from "react";
+import heart from "../assets/heart.svg";
+import rocket from "../assets/rocket.svg";
+import individuell from "../assets/individuell.svg";
+import fastdeliver from "../assets/fastdeliver.svg"; 
+import handshake from "../assets/handshake.svg";
+import wrench from "../assets/wrench.svg";
 
 
 const reasons = [
   {
-    icon: "💡",
-    title: "Echte Leidenschaft",
-    description: "Wir lieben, was wir tun – und das merkt man an jedem Projekt. Persönlich, engagiert und zuverlässig."
+    icon: <img src={wrench} alt="Alles aus einer Hand" className="w-14 h-14 mx-auto" />,
+    title: "Alles aus einer Hand",
+    description: "Design, Technik, Hosting und Support – du hast nur einen Ansprechpartner und wir kümmern uns um alles."
   },
   {
-    icon: "🚀",
+    icon: <img src={rocket} alt="Innovativ & modern" className="w-14 h-14 mx-auto" />,
     title: "Innovativ & modern",
     description: "Deine Website wird mit aktuellen Technologien und frischen Ideen umgesetzt – damit du immer einen Schritt voraus bist."
   },
   {
-    icon: "🎯",
+    icon: <img src={individuell} alt="Individuell für dein Unternehmen" className="w-14 h-14 mx-auto" />,
     title: "Individuell für dein Unternehmen",
     description: "Wir entwickeln Lösungen, die genau zu deinem Unternehmen und deinen Zielen passen – keine Website von der Stange."
   },
   {
-    icon: "⚡",
+    icon: <img src={heart} alt="Echte Leidenschaft" className="w-14 h-14 mx-auto" />,
+    title: "Echte Leidenschaft",
+    description: "Wir lieben, was wir tun – und das merkt man an jedem Projekt. Persönlich, engagiert und zuverlässig."
+  },
+  {
+    icon: <img src={fastdeliver} alt="Schnell online" className="w-14 h-14 mx-auto" />,
     title: "Schnell online",
     description: "Kurze Umsetzungszeiten, klare Kommunikation und ein reibungsloser Ablauf – damit du schnell startest."
   },
   {
-    icon: "🤝",
+    icon: <img src={handshake} alt="Partnerschaftlich & fair" className="w-14 h-14 mx-auto" />,
     title: "Partnerschaftlich & fair",
     description: "Wir begleiten dich von der ersten Idee bis zur fertigen Website und sind auch danach für dich da."
   },
-  {
-    icon: "🔧",
-    title: "Alles aus einer Hand",
-    description: "Design, Technik, Hosting und Support – du hast nur einen Ansprechpartner und wir kümmern uns um alles."
-  }
+  
 ];
 
 const LandingSection2 = () => {

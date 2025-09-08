@@ -1,30 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import meeting from "../assets/meeting.svg";
+import task from "../assets/task.svg";
+import develope from "../assets/develope.svg";
+import consulting from "../assets/consulting.svg";
 
 const partnershipSteps = [
   {
     step: "1",
     title: "Kennenlernen",
     description: "Wir hören zu, verstehen deine Vision und lernen dein Business kennen.",
-    icon: "👋"
+    icon: <img src={meeting} alt="Kennenlernen" className="w-12 h-12 mx-auto" />
   },
   {
     step: "2",
     title: "Gemeinsam planen",
     description: "Zusammen entwickeln wir die perfekte Strategie für dein Projekt.",
-    icon: "🤝"
+    icon: <img src={task} alt="Gemeinsam planen" className="w-12 h-12 mx-auto" />
   },
   {
     step: "3",
     title: "Transparent entwickeln",
     description: "Du bist immer im Loop – regelmäßige Updates und offene Kommunikation.",
-    icon: "💻"
+    icon: <img src={develope} alt="Transparent entwickeln" className="w-12 h-12 mx-auto" />
   },
   {
     step: "4",
     title: "Langfristig betreuen",
     description: "Auch nach dem Launch sind wir dein Partner für Updates und Weiterentwicklung.",
-    icon: "🚀"
+    icon: <img src={consulting} alt="Langfristig betreuen" className="w-12 h-12 mx-auto" />
   }
 ];
 

@@ -1,18 +1,21 @@
 import React from "react";
+import blitz from "../assets/blitz.svg";
+import shoppingCart from "../assets/shoppingCart.svg";
+import webdesign from "../assets/webdesign.svg";
 
 const features = [
   {
-    icon: "⚡",
+    icon: <img src={blitz} alt="Schnell & Responsiv" className="w-9 h-9 text-white-500" />,
     title: "Schnell & Responsiv",
     desc: "Deine Website lädt blitzschnell und sieht auf jedem Gerät perfekt aus.",
   },
   {
-    icon: "🛒",
+    icon: <img src={shoppingCart} alt="Von Landingpage bis Shop" className="w-9 h-9 text-white-500" />,
     title: "Von Landingpage bis Shop",
     desc: "Von einfachen Landingpages bis zur Individuellen Software – alles aus einer Hand.",
   },
   {
-    icon: "🎨",
+    icon: <img src={webdesign} alt="Design nach Maß" className="w-9 h-9 text-white-500" />,
     title: "Design nach Maß",
     desc: "Modernes, einzigartiges Design, das zu deinem Unternehmen passt.",
   },

@@ -1,4 +1,7 @@
 import React from "react";
+import heart from "../assets/heart.svg";
+import rocket from "../assets/rocket.svg";
+import united from "../assets/united.svg";
 
 const teamMembers = [
   {
@@ -141,21 +144,21 @@ const Team = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="group hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🔥</div>
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"><img src={heart} alt="Echte Leidenschaft" className="w-14 h-14 mx-auto" /></div>
               <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Leidenschaft</h4>
               <p className="text-[#748cab] leading-relaxed">
                 Wir lieben, was wir tun und bringen diese Begeisterung in jedes Projekt ein.
               </p>
             </div>
             <div className="group hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🚀</div>
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"><img src={rocket} alt="Innovation" className="w-14 h-14 mx-auto" /></div>
               <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Innovation</h4>
               <p className="text-[#748cab] leading-relaxed">
                 Immer auf dem neuesten Stand der Technik und offen für neue Wege.
               </p>
             </div>
             <div className="group hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🤝</div>
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"><img src={united} alt="Teamwork" className="w-14 h-14 mx-auto" /></div>
               <h4 className="font-bebas text-lg text-[#f0ebd8] mb-3 tracking-wide">Teamwork</h4>
               <p className="text-[#748cab] leading-relaxed">
                 Gemeinsam sind wir stärker - sowohl intern als auch mit unseren Kunden.
