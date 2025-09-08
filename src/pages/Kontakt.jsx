@@ -73,7 +73,7 @@ const Kontakt = () => {
         const { name, value } = e.target;
         
         // Input-Sanitization mit DOMPurify
-        const sanitizedValue = DOMPurify.sanitize(value.trim(), {
+        const sanitizedValue = DOMPurify.sanitize(value, {
             ALLOWED_TAGS: [],
             ALLOWED_ATTR: []
         });
