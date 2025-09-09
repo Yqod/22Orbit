@@ -49,14 +49,16 @@ function Landingpage() {
       <div className="relative z-10">
         <Hero />
         <About22Orbit />
+        <Team />
         <LandingSection1 />
         <LandingSection2 />
         
         
         <LandingSection4 />
-        <LandingSection3 />
         <LandingSection5 />
-        <Team />
+        <LandingSection3 />
+        
+        
         <CTA />
         <Footer />
         </div>
