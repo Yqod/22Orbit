@@ -8,14 +8,14 @@ const teamMembers = [
   {
     id: 1,
     name: "Georg Reinicke",
-    role: "Fullstack Entwickler & Teamlead",
+    role: "Entwickler & Teamleiter",
     description: "Bringt Ideen zum Leben, sorgt für reibungslose Abläufe und liebt innovative Lösungen.",
     skills: ["React", "Node.js", "Projektmanagement"],
     image: "/georgOrbit.png"
   },
   {
     id: 2,
-    name: "Maja Liebemann",
+    name: "Maximilian Ott",
     role: "Frontend & UX",
     description: "Gestaltet moderne, nutzerfreundliche Oberflächen und hat immer ein Auge fürs Detail.",
     skills: ["React", "TypeScript", "UX/UI"],
@@ -33,7 +33,7 @@ const teamMembers = [
     id: 4,
     name: "Annabell Lenz",
     role: "UI/UX Designerin",
-    description: "Entwirft benutzerfreundliche Interfaces und sorgt für optimale User Experience.",
+    description: "Entwirft benutzerfreundliche Oberflächen und sorgt für optimale Benutzererfahrung.",
     skills: ["Figma", "Design Systems", "UX Research"],
     image: "/annabellOrbit.png"
   }
@@ -75,16 +75,7 @@ const Team = () => {
               <h3 className="font-bebas text-2xl sm:text-3xl text-[#f0ebd8] mb-1 tracking-wide">{member.name}</h3>
               <p className="text-[#748cab] font-medium text-base mb-2">{member.role}</p>
               <p className="text-[#748cab] text-sm leading-relaxed mb-3">{member.description}</p>
-              <div className="flex flex-wrap justify-center gap-2 mt-auto">
-                {member.skills.map((skill, idx) => (
-                  <span
-                    key={idx}
-                    className="px-2 py-1 bg-[#748cab]/20 text-[#f0ebd8] text-xs rounded-full border border-[#748cab]/30"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+              
             </div>
           ))}
         </div>
