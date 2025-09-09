@@ -48,9 +48,10 @@ function Landingpage() {
       {/* Content darunter */}
       <div className="relative z-10">
         <Hero />
+        <LandingSection1 />
         <About22Orbit />
         <Team />
-        <LandingSection1 />
+        
         <LandingSection2 />
         
         
