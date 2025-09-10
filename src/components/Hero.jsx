@@ -40,7 +40,7 @@ const Hero = () => (
 
       <div className="relative z-[10001] flex justify-center">
         <a
-          href="#About22Orbit"
+          href="#section1"
           className="inline-block bg-gradient-to-r from-[#3e5c76] to-[#1d2d44] text-[#f0ebd8] font-bebas text-xl px-10 py-4 rounded-full shadow-lg tracking-widest hover:scale-105 transition-transform duration-300"
         >
           Los geht's!
