@@ -14,16 +14,15 @@ import About22Orbit from '../components/About22Orbit.jsx';
 
 function Landingpage() {
   useEffect(() => {
-    // Warte bis die Komponente vollständig gerendert ist
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 0);
   }, []);
 
- return (
+  return (
     <div className="bg-[#0d1321] w-full relative scroll-smooth">
       {/* Particles als fixer Hintergrund */}
-      <div className="fixed inset-0 w-full h-full z-[9999] pointer-events-none">
+      <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
         <Particles
           particleColors={['#f0ebd8', '#748cab']}
           particleCount={200}
@@ -36,7 +35,7 @@ function Landingpage() {
         />
       </div>
       {/* Navbar mit extra hohem z-index */}
-      <div className="fixed top-0 left-0 w-full z-[10000]">
+      <div className="fixed top-0 left-0 w-full z-30">
         <Navbar
           items={[
             { href: "#leistungen", label: "Leistungen" },
@@ -45,24 +44,20 @@ function Landingpage() {
           ]}
         />
       </div>
-      {/* Content darunter */}
-      <div className="relative z-10">
+      {/* Hero Section über Particles */}
+      <div className="relative z-20">
         <Hero />
-        <LandingSection1 />
-        <About22Orbit />
-        <Team />
-        
-        <LandingSection2 />
-        
-        
-        <LandingSection4 />
-        <LandingSection5 />
-        <LandingSection3 />
-        
-        
-        <CTA />
-        <Footer />
-        </div>
+      </div>
+      {/* Restlicher Content */}
+      <LandingSection1 />
+      <About22Orbit />
+      <Team />
+      <LandingSection2 />
+      <LandingSection4 />
+      <LandingSection5 />
+      <LandingSection3 />
+      <CTA />
+      <Footer />
     </div>
   );
 }

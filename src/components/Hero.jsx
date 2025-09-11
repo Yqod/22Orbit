@@ -1,53 +1,49 @@
 import SplitText from "./SplitText";
-import React from "react";
-  
 
-const Hero = () => (
-  <section className=" bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] relative w-full flex flex-col items-center justify-center pt-60 sm:pt-60 pb-40 sm:pb-24 px-4 ">
-    <div className="max-w-3xl mx-auto text-center">
-      
-      <div className="font-bebas text-[2.7rem] sm:text-7xl md:text-8xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-8 whitespace-nowrap">
-        <SplitText
-          text=" Deine Webagentur"
-          delay={100}
-          duration={0.6}
-          ease="power3.out"
-          splitType="chars"
-          from={{ opacity: 0, y: 40 }}
-          to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-100px"
-          textAlign="center"
-        />
-        <br />
-        <SplitText
-          text="-22Orbit-"
-          delay={600}
-          duration={0.6}
-          ease="power3.out"
-          splitType="chars"
-          from={{ opacity: 0, y: 40 }}
-          to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-100px"
-          textAlign="center"
-        />
-      </div>
-      
-      <p className="text-[#748cab] text-xl sm:text-2xl md:text-3xl font-light mb-8">
-        Webseiten, Shops, Plugins und Software – individuell und passgenau für dein Business.
-      </p>
 
-      <div className="relative z-[10001] flex justify-center">
-        <a
-          href="#section1"
-          className="inline-block bg-gradient-to-r from-[#3e5c76] to-[#1d2d44] text-[#f0ebd8] font-bebas text-xl px-10 py-4 rounded-full shadow-lg tracking-widest hover:scale-105 transition-transform duration-300"
-        >
-          Los geht's!
-        </a>
-      </div>
-    </div>
-  </section>
-);
+const Hero = () => {
+    return (
+        <div className="relative bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321]">
+    
+
+    <section className="overflow-hidden pt-20 pb-12 lg:pt-[1px] lg:pb-[10px]">
+        <div className="flex flex-col lg:flex-row lg:items-stretch lg:max-h-[800px] lg:min-h-[800px] ">
+            <div className="flex items-center justify-center w-full lg:order-2 lg:w-7/12">
+                <div className="h-full px-4 pt-24 pb-16 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14">
+                    <div className="flex flex-col justify-between flex-1 h-full pt-12 lg:pt-16">
+                        <div>
+                            <h1 className="font-bebas text-5xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">Webseiten<br /> Die Begeistern</h1>
+                            <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light mb-6 leading-relaxed">Deine Website ist der Schlüssel zu deinem Erfolg im digitalen Zeitalter.</p>
+                            <a href="#section1" title="" className="inline-flex items-center px-6 py-5 bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-lg sm:text-xl" role="button"> Entdecke unser Angebot</a>
+                        </div>
+
+                        <div className="mt-8 border-t-2 border-[#f0ebd8] lg:mt-auto sm:mt-14">
+                            <div className="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
+                                <p className="text-base font-semibold text-[#f0ebd8]">Kunden vertrauen uns</p>
+
+                                <div className="flex items-center mt-5 space-x-5 sm:mt-0">
+                                    <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=c0ca25e8fd581d08&tbm=lcl&sxsrf=AE3TifOi2-gCihEglyXSi3Wy0Nsq4seAxQ:1757593849842&q=22Orbit+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDY0MDa0MDO1MDewtDAyMTYxMd3AyPiKUdjIyL8oKbNEISi1KjWvODM_LzVvESs2UQA96ccgRwAAAA&rldimm=13103186587098243445&hl=de-DE&sa=X&ved=2ahUKEwjv9NCo29CPAxXi1wIHHR0xGfkQ9fQKegQIVBAH&biw=1440&bih=768&dpr=2#lkt=LocalPoiReviews" title="" className="block transition-all duration-200 hover:opacity-80 focus:opacity-80" role="button">
+                                        <img className="w-auto rounded h-14 sm:h-16 pr-60" src="/Google5.png" alt="" />
+                                    </a>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
+                <div className="lg:absolute lg:bottom-0 lg:left-0">
+                    <img className="w-full" src="/22OrbitHand.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    )
+}
 
 export default Hero;
