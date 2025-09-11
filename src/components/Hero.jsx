@@ -6,10 +6,10 @@ const Hero = () => {
         <div className="relative bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321]">
     
 
-    <section className="overflow-hidden pt-20 pb-12 lg:pt-[1px] lg:pb-[10px]">
+    <section className="overflow-hidden pt-20 pb-6 lg:pt-[1px] lg:pb-[10px]">
         <div className="flex flex-col lg:flex-row lg:items-stretch lg:max-h-[800px] lg:min-h-[800px] ">
             <div className="flex items-center justify-center w-full lg:order-2 lg:w-7/12">
-                <div className="h-full px-4 pt-24 pb-16 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14">
+                <div className="h-full px-4 pt-24 pb-4 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14">
                     <div className="flex flex-col justify-between flex-1 h-full pt-12 lg:pt-16">
                         <div>
                             <h1 className="font-bebas text-5xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">Webseiten<br /> Die Begeistern</h1>
@@ -34,11 +34,11 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
-                <div className="lg:absolute lg:bottom-0 lg:left-0">
-                    <img className="w-full" src="/22OrbitHand.png" alt="" />
-                </div>
-            </div>
+            <div className="relative w-full overflow-hidden lg:w-5/12 lg:order-1 pt-10">
+    <div className="lg:absolute lg:bottom-0 lg:left-0 -mt-12 lg:mt-0">
+        <img className="w-full" src="/22OrbitHand.png" alt="" />
+    </div>
+</div>
         </div>
     </section>
 </div>
