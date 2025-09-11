@@ -32,20 +32,36 @@ const Hero = () => {
                             />
                             </span>
                             </h1>
-                            <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light mb-6 pt-12 leading-relaxed">Entdecke das Internet neu.</p>
+                            <p className="text-[#748cab] text-lg font-light mb-6 leading-relaxed">
+                             <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, von Landing Page bis zur indivduellen Software, alles aus einer Hand
+                                 </p>
 
                         </div>
 
                         <div className="mt-8 border-t-2 border-[#f0ebd8] lg:mt-auto sm:mt-20">
                             <div className="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
                                 <p className="text-base font-semibold text-[#f0ebd8]">Kunden vertrauen uns</p>
-
-                                <div className="flex items-center mt-12 space-x-5 sm:mt-12">
-                                    <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=c0ca25e8fd581d08&tbm=lcl&sxsrf=AE3TifOi2-gCihEglyXSi3Wy0Nsq4seAxQ:1757593849842&q=22Orbit+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDY0MDa0MDO1MDewtDAyMTYxMd3AyPiKUdjIyL8oKbNEISi1KjWvODM_LzVvESs2UQA96ccgRwAAAA&rldimm=13103186587098243445&hl=de-DE&sa=X&ved=2ahUKEwjv9NCo29CPAxXi1wIHHR0xGfkQ9fQKegQIVBAH&biw=1440&bih=768&dpr=2#lkt=LocalPoiReviews" title="" className="block transition-all duration-200 hover:opacity-80 focus:opacity-80" role="button">
-                                        <img className="w-auto rounded h-14 sm:h-16 mt-6 pr-60" src="/Google5.png" alt="" />
-                                    </a>
-
-                                    
+                                <div className="flex items-center gap-8 mt-8 sm:mt-0 justify-center">
+                                <a
+                                    href="https://www.google.com/search?client=firefox-b-d&sca_esv=c0ca25e8fd581d08&tbm=lcl&sxsrf=AE3TifOi2-gCihEglyXSi3Wy0Nsq4seAxQ:1757593849842&q=22Orbit+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDY0MDa0MDO1MDewtDAyMTYxMd3AyPiKUdjIyL8oKbNEISi1KjWvODM_LzVvESs2UQA96ccgRwAAAA&rldimm=13103186587098243445&hl=de-DE&sa=X&ved=2ahUKEwjv9NCo29CPAxXi1wIHHR0xGfkQ9fQKegQIVBAH&biw=1440&bih=768&dpr=2#lkt=LocalPoiReviews"
+                                    title="Google Rezensionen"
+                                    className="block transition-all duration-200 hover:opacity-80 focus:opacity-80"
+                                    role="button"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img className="w-auto rounded h-14 sm:h-16" src="/Google5.png" alt="Google Rezensionen" />
+                                </a>
+                                <a
+                                    href="https://de.trustpilot.com/review/22orbit.de"
+                                    title="Trustpilot Rezensionen"
+                                    className="block transition-all duration-200 hover:opacity-80 focus:opacity-80"
+                                    role="button"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img className="w-auto rounded h-8 sm:h-12" src="/Trustpilo1.png" alt="Trustpilot Rezensionen" />
+                                </a>
                                 </div>
                             </div>
                         </div>
