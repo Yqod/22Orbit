@@ -61,7 +61,7 @@ const Team = () => {
               className="flex flex-col items-center text-center"
             >
               {/* Großes, eckiges Profilbild ohne Kasten */}
-                <div className="w-80 h-80 sm:w-[280px] sm:h-[320px] overflow-hidden shadow-2xl mb-6 bg-[#1d2d44] flex items-center justify-center rounded-2xl">
+                <div className="w-80 h-80 sm:w-[280px] sm:h-[320px] overflow-hidden shadow-2xl mb-6 bg-[#1d2d44] flex items-center justify-center rounded-2xl z-10">
                   <img
                     src={member.image}
                     alt={member.name}

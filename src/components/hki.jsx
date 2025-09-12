@@ -26,7 +26,7 @@ const HkiPortfolio = () => (
         </a>
       </div>
       {/* Bildbereich */}
-      <div className="flex-1 flex items-center justify-center order-1 md:order-2">
+      <div className="flex-1 flex items-center justify-center order-1 md:order-2 z-10">
         <img
           src="/hkiMockup.png"
           alt="HKI Website Mockup"
