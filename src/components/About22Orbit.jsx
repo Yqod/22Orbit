@@ -10,7 +10,7 @@ const About22Orbit = () => (
         </h2>
        
         <p className="text-[#748cab] text-lg font-light mb-6 leading-relaxed">
-          <span className="font-bebas text-xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, gegründet von zwei Freunden mit einer großen Liebe zur <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
+          <span className="font-bebas text-xl text-[#f0ebd8]">22Orbit</span> ist eine junge Webagentur im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>,mit einer großen Liebe zur <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> und digitalen Innovation.
         </p>
          <img
           src="astronautNachUnten.png"
