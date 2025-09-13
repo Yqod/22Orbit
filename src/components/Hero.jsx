@@ -9,7 +9,7 @@ const Hero = () => {
 >
     
 
-    <section className="overflow-hidden pt-12 pb-6 lg:pt-[1px] lg:pb-[10px]">
+    <section className="overflow-hidden pt-12 pb-6 lg:pt-[48px] lg:pb-[10px]">
         <div className="flex flex-col lg:flex-row lg:items-stretch lg:min-h-screen lg:max-h-screen">
             <div className="flex items-center justify-center w-full lg:order-2 lg:w-7/12">
                 <div className="h-full px-4 pt-16 pb-4 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14">
@@ -32,13 +32,13 @@ const Hero = () => {
                             />
                             </span>
                             </h1>
-                            <p className="text-[#748cab] text-lg font-light mb-6 leading-relaxed">
+                            <p className="text-[#748cab] text-lg font-light mb-2 leading-relaxed">
                              <span className="font-bebas text-xl text-[#f0ebd8]">Webentwicklung</span> im Herzen <span className="font-bebas text-xl text-[#f0ebd8]">Magdeburgs</span>, von Landing Page bis zur indivduellen Software, alles aus einer Hand
                                  </p>
 
                         </div>
 
-                        <div className="mt-8 border-t-2 border-[#f0ebd8] lg:mt-auto sm:mt-20">
+                        <div className="mt-8 border-t-2 border-[#f0ebd8] lg:mt-12 sm:mt-20">
                             <div className="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
                                 <p className="text-base font-semibold text-[#f0ebd8]">Kunden vertrauen uns</p>
                                 <div className="flex items-center gap-8 mt-8 sm:mt-0 justify-center">
