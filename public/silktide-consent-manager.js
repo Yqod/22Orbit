@@ -300,10 +300,11 @@ class SilktideCookieBanner {
       preferencesButtonLabel && preferencesButtonLabel !== preferencesButtonText 
         ? ` aria-label="${preferencesButtonLabel}"` 
         : ''
-    }><span>${preferencesButtonText}</span></button>`;
+    }><span>Einstellungen</span></button>`;
     
 
-    
+    // Silktide logo link
+   
 
     const bannerContent = `
       ${bannerDescription}
@@ -312,7 +313,7 @@ class SilktideCookieBanner {
         ${rejectNonEssentialButton}
         <div class="actions-row">
           ${preferencesButton}
-          ${silktideLogo}
+          
         </div>
       </div>
     `;
@@ -403,7 +404,13 @@ class SilktideCookieBanner {
     }>${rejectNonEssentialButtonText}</button>`;
     
     // Credit link
-  
+    const creditLinkText = this.config.text?.preferences?.creditLinkText || '';
+    const creditLinkAccessibleLabel = this.config.text?.preferences?.creditLinkAccessibleLabel;
+    const creditLink = `<a href="https://silktide.com/consent-manager" target="_blank" rel="noreferrer"${
+      creditLinkAccessibleLabel && creditLinkAccessibleLabel !== creditLinkText
+        ? ` aria-label="${creditLinkAccessibleLabel}"`
+        : ''
+    }>${creditLinkText}</a>`;
     
     
 
