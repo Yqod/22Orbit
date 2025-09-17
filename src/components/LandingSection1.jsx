@@ -30,10 +30,10 @@ function LandingSection1() {
       <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
         {/* Textbereich links, auf Mobil zentriert */}
         <div className="flex-1 w-full max-w-xl mx-auto text-center md:max-w-none md:mx-0 md:text-left mb-4 md:mb-0">
-          <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
+          <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0f8ff] font-bold tracking-widest drop-shadow-lg mb-6">
             Unsere Stärken
           </h2>
-          <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light mb-6 leading-relaxed">
+          <p className="text-[#f0f8ff] text-lg sm:text-xl md:text-2xl font-light mb-6 leading-relaxed">
             Wir verbinden Kreativität mit technischer Exzellenz und schaffen digitale Lösungen, 
             die nicht nur gut aussehen, sondern auch perfekt funktionieren.
           </p>
@@ -46,10 +46,10 @@ function LandingSection1() {
               className="bg-[#3e5c76]/20 backdrop-blur-sm rounded-2xl p-4 sm:p-5 border border-[#748cab]/30 hover:border-[#748cab]/60 hover:bg-[#3e5c76]/30 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center"
             >
               <div className="text-2xl sm:text-3xl mb-2">{feature.icon}</div>
-              <h3 className="font-bebas text-base sm:text-lg text-[#f0ebd8] mb-2 tracking-wide">
+              <h3 className="font-bebas text-base sm:text-lg text-[#f0f8ff] mb-2 tracking-wide">
                 {feature.title}
               </h3>
-              <p className="text-[#748cab] text-sm sm:text-base leading-relaxed">
+              <p className="text-[#f0f8ff] text-sm sm:text-base leading-relaxed">
                 {feature.desc}
               </p>
             </div>
