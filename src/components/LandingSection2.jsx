@@ -156,7 +156,7 @@ const LandingSection2 = () => {
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-4 sm:mb-6">
           Warum 22Orbit?
         </h2>
-        <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+        <p className="text-[#f0ebd8] text-lg sm:text-xl md:text-2xl font-light mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
           Software-Entwicklung ist mehr als nur Code – es ist unsere Leidenschaft. 
           Wir brennen für innovative Lösungen und digitale Erlebnisse, die begeistern.
         </p>

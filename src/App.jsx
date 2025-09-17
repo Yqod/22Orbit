@@ -7,10 +7,13 @@ import Karriere from "./pages/Karriere.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Kontakt from "./pages/Kontakt.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import CookieBanner from "./components/cookieBanner"; 
 
 
 function App() {
   return (
+    <>
+    <CookieBanner />
     <Routes>
       <Route path="/" element={<Landingpage />} />
       <Route path="/preisliste" element={<Pricing />} />
@@ -21,6 +24,7 @@ function App() {
       <Route path="/faq" element={<FAQ />} />
       <Route path="/kontakt" element={<Kontakt />} />
     </Routes>
+    </>
   );
 }
 

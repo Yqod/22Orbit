@@ -41,14 +41,14 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="team-section" className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-12 sm:py-20 px-4">
+    <section id="team-section" className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-0 sm:py-0 px-4">
       <div className="w-full max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-4">
             Das Team hinter 22Orbit
           </h2>
-          <p className="text-[#748cab] text-lg sm:text-xl font-light max-w-2xl mx-auto px-4">
+          <p className="text-[#f0ebd8] text-lg sm:text-xl font-light max-w-2xl mx-auto px-4">
             Wir sind ein kreatives, eingespieltes Team mit viel Herz, Know-how und Spaß an digitalen Projekten. Persönlich, direkt und immer für dich da!
           </p>
         </div>
@@ -84,19 +84,19 @@ const Team = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           <div className="bg-[#1d2d44]/80 rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">50+</div>
-            <p className="text-[#748cab] text-sm">Projekte realisiert</p>
+            <p className="text-[#f0ebd8] text-sm">Projekte realisiert</p>
           </div>
           <div className="bg-[#1d2d44]/80 rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">5</div>
-            <p className="text-[#748cab] text-sm">Jahre Erfahrung</p>
+            <p className="text-[#f0ebd8] text-sm">Jahre Erfahrung</p>
           </div>
           <div className="bg-[#1d2d44]/80 rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">24/7</div>
-            <p className="text-[#748cab] text-sm">Support verfügbar</p>
+            <p className="text-[#f0ebd8] text-sm">Support verfügbar</p>
           </div>
           <div className="bg-[#1d2d44]/80 rounded-2xl p-6 border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300">
             <div className="text-3xl sm:text-4xl font-bebas text-[#f0ebd8] mb-2">100%</div>
-            <p className="text-[#748cab] text-sm">Kundenzufriedenheit</p>
+            <p className="text-[#f0ebd8] text-sm">Kundenzufriedenheit</p>
           </div>
         </div>
 
@@ -109,21 +109,21 @@ const Team = () => {
             <div className="group hover:scale-105 transition-transform duration-300">
               <img src={heart} alt="Leidenschaft" className="w-14 h-14 mx-auto mb-3" />
               <h4 className="font-bebas text-lg text-[#f0ebd8] mb-2 tracking-wide">Leidenschaft</h4>
-              <p className="text-[#748cab] leading-relaxed text-base">
+              <p className="text-[#f0ebd8] leading-relaxed text-base">
                 Wir lieben, was wir tun – und das spürst du in jedem Projekt.
               </p>
             </div>
             <div className="group hover:scale-105 transition-transform duration-300">
               <img src={rocket} alt="Innovation" className="w-14 h-14 mx-auto mb-3" />
               <h4 className="font-bebas text-lg text-[#f0ebd8] mb-2 tracking-wide">Innovation</h4>
-              <p className="text-[#748cab] leading-relaxed text-base">
+              <p className="text-[#f0ebd8] leading-relaxed text-base">
                 Wir denken voraus und bringen frische Ideen in deine digitale Welt.
               </p>
             </div>
             <div className="group hover:scale-105 transition-transform duration-300">
               <img src={united} alt="Teamwork" className="w-14 h-14 mx-auto mb-3" />
               <h4 className="font-bebas text-lg text-[#f0ebd8] mb-2 tracking-wide">Teamgeist</h4>
-              <p className="text-[#748cab] leading-relaxed text-base">
+              <p className="text-[#f0ebd8] leading-relaxed text-base">
                 Wir arbeiten Hand in Hand – mit dir und miteinander.
               </p>
             </div>

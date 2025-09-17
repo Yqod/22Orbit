@@ -9,10 +9,10 @@ const LandingSection5 = () => (
         <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
           Für jedes Budget die passende Lösung
         </h2>
-        <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto px-4 mb-4">
+        <p className="text-[#f0ebd8] text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto px-4 mb-4">
           Egal ob Start-up, Mittelstand oder Großkonzern – wir entwickeln digitale Lösungen, die zu deinem Budget und deinen Zielen passen.
         </p>
-        <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto px-4">
+        <p className="text-[#f0ebd8] text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto px-4">
           Unsere Kunden betreuen wir persönlich und zuverlässig – national wie international. Dein Erfolg ist unser Antrieb.
         </p>
       </div>

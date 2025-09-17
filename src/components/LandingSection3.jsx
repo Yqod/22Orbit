@@ -41,7 +41,7 @@ const LandingSection3 = () => {
           <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
             Echte Partnerschaft
           </h2>
-          <p className="text-[#748cab] text-lg sm:text-xl md:text-2xl font-light max-w-4xl mx-auto px-4">
+          <p className="text-[#f0ebd8] text-lg sm:text-xl md:text-2xl font-light max-w-4xl mx-auto px-4">
             Wir glauben an langfristige Partnerschaften, nicht an einmalige Projekte. 
             Dein Erfolg ist unser Erfolg – deshalb arbeiten wir eng zusammen, von der ersten Idee bis weit über den Launch hinaus.
           </p>
