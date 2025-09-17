@@ -1,6 +1,70 @@
 <!doctype html>
 <html lang="de">
   <head>
+
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="/silktide-consent-manager.css">
+<script src="/silktide-consent-manager.js"></script>
+<script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: true
+  },
+  cookieIcon: {
+    position: "bottomRight"
+  },
+  cookieTypes: [
+    {
+      id: "erforderliche",
+      name: "Erforderliche",
+      description: "<p>Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie helfen beispielsweise beim Speichern Ihrer Datenschutzeinstellungen.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Erforderliche here');
+      }
+    },
+    {
+      id: "statistik_cookies",
+      name: "Statistik - Cookies",
+      description: "<p>Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale Medien anbieten zu können und die Zugriffe auf unsere Website zu analysieren.<br data-start=\"1624\" data-end=\"1627\">\nFür Werbezwecke nutzen wir Google Ads. Dabei können Cookies gesetzt werden, um Nutzer wiederzuerkennen und die Wirksamkeit von Anzeigen zu messen.<br data-start=\"1775\" data-end=\"1778\">\nDiese Cookies werden nur mit Ihrer Zustimmung aktiviert.“</p>",
+      required: false,
+      onAccept: function() {
+        gtag('consent', 'update', {
+          analytics_storage: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_statistik_cookies',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          analytics_storage: 'denied',
+        });
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p> Wir verwenden Cookies auf unserer Website, um den Besucherverkehr zu analysieren und um personalisierte Werbung ausspielen zu können. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Alle Aktzeptieren",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "nicht Notwendige ablehnen",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Cookies Anpassen",
+      description: "<p>Wir respektieren Ihr Recht auf Privatsphäre. Sie können festlegen, dass bestimmte Arten von Cookies nicht zugelassen werden. Ihre Cookie-Einstellungen gelten für unsere gesamte Website.</p>",
+      creditLinkText: "",
+      creditLinkAccessibleLabel: ""
+    }
+  },
+  position: {
+    banner: "bottomCenter"
+  }
+});
+</script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="orbit.png" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
