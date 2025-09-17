@@ -19,7 +19,9 @@ silktideCookieBannerManager.updateCookieBannerConfig({
       description: "<p>Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie helfen beispielsweise beim Speichern Ihrer Datenschutzeinstellungen.</p>",
       required: true,
       onAccept: function() {
-        console.log('Add logic for the required Erforderliche here');
+       if (window.emailjs) {
+      emailjs.init("DEIN_EMAILJS_USER_ID");
+    }
       }
     },
     {
