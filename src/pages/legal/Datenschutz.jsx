@@ -68,8 +68,16 @@ const Datenschutz = () => {
               5. Cookies & Einwilligungsmanagement
             </h2>
             <div className="text-[#748cab] leading-relaxed space-y-3">
-              <p>Wir setzen keine einwilligungsbedürftigen Cookies oder vergleichbaren Technologien (z. B. Marketing-/Tracking-Cookies, Local Storage zu Analyse-/Marketingzwecken) ein.</p>
-              <p><strong>Rechtsgrundlagen:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren Bereitstellung); § 25 Abs. 2 TDDDG.</p>
+              <p>Wir verwenden Cookies und vergleichbare Technologien. Dazu gehören 
+              sowohl technisch notwendige Cookies, die für den Betrieb unserer Website 
+              erforderlich sind, als auch einwilligungsbedürftige Cookies für 
+              Marketing- und Analysezwecke (z. B. im Rahmen von Google Ads). 
+                Wir setzen ein Einwilligungs-Management-Tool (Cookie-Banner) ein. 
+              Hierüber werden Sie beim erstmaligen Besuch unserer Website informiert 
+              und können entscheiden, ob Sie in die Nutzung von Marketing- und 
+              Analyse-Cookies einwilligen möchten. Ihre Auswahl können Sie jederzeit 
+              über die „Cookie-Einstellungen“ im Footer ändern.</p>
+            <p><strong>Rechtsgrundlagen:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren Bereitstellung); § 25 Abs. 2 TDDDG.</p>
               <p><strong>Consent-Banner:</strong> nicht erforderlich, da keine einwilligungsbedürftigen Technologien eingesetzt werden.</p>
             </div>
           </div>
