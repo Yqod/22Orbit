@@ -11,31 +11,31 @@ const teamMembers = [
     role: "Entwickler & Teamleiter",
     description: "Bringt Ideen zum Leben, sorgt für reibungslose Abläufe und liebt innovative Lösungen.",
     skills: ["React", "Node.js", "Projektmanagement"],
-    image: "/georgOrbit.png"
+    image: "/georgMojo.png"
   },
   {
     id: 2,
-    name: "Maximilian Ott",
+    name: "Kozato Kaizo",
     role: "Frontend & UX",
     description: "Gestaltet moderne, nutzerfreundliche Oberflächen und hat immer ein Auge fürs Detail.",
     skills: ["React", "TypeScript", "UX/UI"],
-    image: "/maxOrbit.png"
+    image: "/kozatoMojo.png"
   },
   {
     id: 3,
-    name: "Kozato Kaizo",
+    name: "Julius Lenz",
     role: "Backend & DevOps",
     description: "Sorgt für sichere Systeme, schnelle Deployments und stabile Server.",
     skills: ["Node.js", "Security", "DevOps"],
-    image: "/kozatoOrbit.png"
+    image: "/juliusMojo.png"
   },
   {
     id: 4,
-    name: "Annabell Lenz",
+    name: "Maja Bremer",
     role: "UI/UX Designerin",
     description: "Entwirft benutzerfreundliche Oberflächen und sorgt für optimale Benutzererfahrung.",
     skills: ["Figma", "Design Systems", "UX Research"],
-    image: "/annabellOrbit.png"
+    image: "/majaMojo.png"
   }
 ];
 
@@ -61,11 +61,11 @@ const Team = () => {
               className="flex flex-col items-center text-center"
             >
               {/* Großes, eckiges Profilbild ohne Kasten */}
-                <div className="w-80 h-80 sm:w-[280px] sm:h-[320px] overflow-hidden shadow-2xl mb-6 bg-[#1d2d44] flex items-center justify-center rounded-2xl z-10">
+                <div className="w-80 h-80 sm:w-[280px] sm:h-[320px] overflow-hidden shadow-2xl mb-6 bg-[#1d2d44]/20 rounded-2xl  border border-[#748cab]/30 text-center hover:scale-105 transition-transform duration-300 flex items-center justify-center rounded-2xl z-10">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[30%_15%] sm: object-[30%_27%] "
                     onError={e => { e.target.style.display = "none"; }}
                   />
                   {!member.image && (
