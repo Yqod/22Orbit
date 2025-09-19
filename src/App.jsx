@@ -7,6 +7,7 @@ import Karriere from "./pages/Karriere.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Kontakt from "./pages/Kontakt.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import Workflow from "./pages/workflow.jsx";
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Route path="/karriere" element={<Karriere />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/kontakt" element={<Kontakt />} />
+      <Route path="/workflow" element={<Workflow />} />
     </Routes>
     </>
   );

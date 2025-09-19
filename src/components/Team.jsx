@@ -11,7 +11,7 @@ const teamMembers = [
     role: "Entwickler & Teamleiter",
     description: "Bringt Ideen zum Leben, sorgt für reibungslose Abläufe und liebt innovative Lösungen.",
     skills: ["React", "Node.js", "Projektmanagement"],
-    image: "/georgMojo.png"
+    image: "/georgMojo1.webp"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const teamMembers = [
     role: "Backend & DevOps",
     description: "Sorgt für sichere Systeme, schnelle Deployments und stabile Server.",
     skills: ["Node.js", "Security", "DevOps"],
-    image: "/juliusMojo.png"
+    image: "/juliusMojo1.webp"
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const teamMembers = [
     role: "UI/UX Designerin",
     description: "Entwirft benutzerfreundliche Oberflächen und sorgt für optimale Benutzererfahrung.",
     skills: ["Figma", "Design Systems", "UX Research"],
-    image: "/majaMojo.png"
+    image: "/majaMojo1.webp"
   }
 ];
 
