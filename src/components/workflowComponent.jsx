@@ -51,7 +51,7 @@ const lottieStyle = { width: 220, height: 220 };
 
 function ServicesSection() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-18 sm:py-24 px-4">
+    <section className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center py-24 sm:py-24 px-4">
       <div className="w-full max-w-7xl mx-auto my-10">
         {/* Header */}
         <div className="text-center mb-16">
