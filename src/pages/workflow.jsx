@@ -5,8 +5,8 @@ import { useEffect } from "react";
 
 function WorkflowPage() {
    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  setTimeout(() => window.scrollTo(0, 0), 0);
+}, []);
   return (
     <div>
       <Navbar />
