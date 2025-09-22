@@ -11,6 +11,7 @@ import Footer from '../components/FooterLegal.jsx';
 import CTA from '../components/CTA.jsx';
 import { useEffect } from 'react';
 import About22Orbit from '../components/About22Orbit.jsx';
+import Bewertungen from '../components/bewertung.jsx';
 
 function Landingpage() {
   useEffect(() => {
@@ -57,6 +58,7 @@ function Landingpage() {
       <LandingSection4 />
       <LandingSection5 />
       <LandingSection3 />
+      <Bewertungen />
       <CTA />
       <Footer />
     </div>
