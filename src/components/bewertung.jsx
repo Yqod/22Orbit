@@ -147,8 +147,8 @@ export default function Bewertungen() {
 
   return (
     <section className="rounded-2xl p-8 max-w-5xl mx-auto my-24">
-      <h2 className="font-bebas text-3xl sm:text-4xl text-[#f0ebd8] mb-8 tracking-wide text-center">
-         Reaktionen underer Kunden
+      <h2 className="font-bebas text-5xl sm:text-6xl text-[#f0ebd8] mb-8 tracking-wide text-center">
+         Das sagen unsere Partner
       </h2>
       <div className="flex items-center justify-center relative">
         <div

@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Julius Lenz",
+    name: "Julian Behrend",
     role: "Backend & DevOps",
     description: "Sorgt für sichere Systeme, schnelle Deployments und stabile Server.",
     skills: ["Node.js", "Security", "DevOps"],
@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Maja Bremer",
+    name: "Mainka Brüggemann",
     role: "UI/UX Designerin",
     description: "Entwirft benutzerfreundliche Oberflächen und sorgt für optimale Benutzererfahrung.",
     skills: ["Figma", "Design Systems", "UX Research"],
