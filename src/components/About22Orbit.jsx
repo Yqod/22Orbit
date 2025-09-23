@@ -14,7 +14,7 @@ const About22Orbit = () => (
         </p>
          <img
           src="astronautNachUnten.png"
-          alt="Astronaut schaut nach unten"
+          alt="Webentwicklung für deine Stadt"
           className="w-[100px] max-w-full object-contain drop-shadow-2xl mb-0 mx-auto"
           style={{ pointerEvents: "none"}}
         />
