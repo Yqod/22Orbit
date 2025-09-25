@@ -19,7 +19,7 @@ const teamMembers = [
     role: "Frontend & UX",
     description: "Gestaltet moderne, nutzerfreundliche Oberflächen und hat immer ein Auge fürs Detail.",
     skills: ["React", "TypeScript", "UX/UI"],
-    image: "/kozatoMojo.png"
+    image: "/kozatoMojo.webp"
   },
   {
     id: 3,
