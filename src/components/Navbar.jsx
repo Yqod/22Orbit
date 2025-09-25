@@ -73,7 +73,11 @@ const Navbar = () => {
         onClick={(e) => handleClick({ type: "home" }, e)}
         className="font-bebas text-2xl sm:text-3xl text-[#f0ebd8] tracking-widest hover:text-[#748cab] transition-colors cursor-pointer"
       >
-        22Orbit
+        <img
+          src="/22OrbitLogoPngWhite.png" // Pfad zu deinem Logo im public-Ordner
+          alt="22Orbit Logo"
+          className="h-10 w-auto mr-2"
+        />
       </button>
 
       {/* Desktop Navigation */}
