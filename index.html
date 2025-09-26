@@ -1,74 +1,73 @@
 <!doctype html>
 <html lang="de">
   <head>
-
     <link rel="stylesheet" id="silktide-consent-manager-css" href="/silktide-consent-manager.css">
-<script src="/silktide-consent-manager.js"></script>
-<script>
-silktideCookieBannerManager.updateCookieBannerConfig({
-  background: {
-    showBackground: true
-  },
-  cookieIcon: {
-    position: "bottomRight"
-  },
-  cookieTypes: [
-    {
-      id: "erforderliche",
-      name: "Erforderliche",
-      description: "<p>Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie helfen beispielsweise beim Speichern Ihrer Datenschutzeinstellungen.</p>",
-      required: true,
-      onAccept: function() {
-        console.log('Add logic for the required Erforderliche here');
-      }
-    },
-    {
-      id: "statistik_cookies",
-      name: "Statistik - Cookies",
-      description: "<p>Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale Medien anbieten zu können und die Zugriffe auf unsere Website zu analysieren.<br data-start=\"1624\" data-end=\"1627\">\nFür Werbezwecke nutzen wir Google Ads. Dabei können Cookies gesetzt werden, um Nutzer wiederzuerkennen und die Wirksamkeit von Anzeigen zu messen.<br data-start=\"1775\" data-end=\"1778\">\nDiese Cookies werden nur mit Ihrer Zustimmung aktiviert.“</p>",
-      required: false,
-      onAccept: function() {
-        gtag('consent', 'update', {
-          analytics_storage: 'granted',
-        });
-        dataLayer.push({
-          'event': 'consent_accepted_statistik_cookies',
-        });
-      },
-      onReject: function() {
-        gtag('consent', 'update', {
-          analytics_storage: 'denied',
-        });
-      }
-    }
-  ],
-  text: {
-    banner: {
-      description: "<p>Wir verwenden Cookies auf unserer Website, um Ihr Nutzererlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Datenverkehr zu analysieren. <a href=\"https://22orbit.de/datenschutz\" target=\"_blank\">Datenschutz.</a></p>",
-      acceptAllButtonText: "Alle Aktzeptieren",
-      acceptAllButtonAccessibleLabel: "Accept all cookies",
-      rejectNonEssentialButtonText: "nicht Notwendige ablehnen",
-      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
-      preferencesButtonText: "Preferences",
-      preferencesButtonAccessibleLabel: "Toggle preferences"
-    },
-    preferences: {
-      title: "Cookies Anpassen",
-      description: "<p>Wir respektieren Ihr Recht auf Privatsphäre. Sie können festlegen, dass bestimmte Arten von Cookies nicht zugelassen werden. Ihre Cookie-Einstellungen gelten für unsere gesamte Website.</p>",
-      creditLinkText: "",
-      creditLinkAccessibleLabel: ""
-    }
-  },
-  position: {
-    banner: "bottomCenter"
-  }
-});
-</script>
+    <script src="/silktide-consent-manager.js"></script>
+    <script>
+      silktideCookieBannerManager.updateCookieBannerConfig({
+        background: {
+          showBackground: true
+        },
+        cookieIcon: {
+          position: "bottomRight"
+        },
+        cookieTypes: [
+          {
+            id: "erforderliche",
+            name: "Erforderliche",
+            description: "<p>Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden. Sie helfen beispielsweise beim Speichern Ihrer Datenschutzeinstellungen.</p>",
+            required: true,
+            onAccept: function() {
+              console.log('Add logic for the required Erforderliche here');
+            }
+          },
+          {
+            id: "statistik_cookies",
+            name: "Statistik - Cookies",
+            description: "<p>Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale Medien anbieten zu können und die Zugriffe auf unsere Website zu analysieren.<br data-start=\"1624\" data-end=\"1627\">\nFür Werbezwecke nutzen wir Google Ads. Dabei können Cookies gesetzt werden, um Nutzer wiederzuerkennen und die Wirksamkeit von Anzeigen zu messen.<br data-start=\"1775\" data-end=\"1778\">\nDiese Cookies werden nur mit Ihrer Zustimmung aktiviert.“</p>",
+            required: false,
+            onAccept: function() {
+              gtag('consent', 'update', {
+                analytics_storage: 'granted',
+              });
+              dataLayer.push({
+                'event': 'consent_accepted_statistik_cookies',
+              });
+            },
+            onReject: function() {
+              gtag('consent', 'update', {
+                analytics_storage: 'denied',
+              });
+            }
+          }
+        ],
+        text: {
+          banner: {
+            description: "<p>Wir verwenden Cookies auf unserer Website, um Ihr Nutzererlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Datenverkehr zu analysieren. <a href=\"https://22orbit.de/datenschutz\" target=\"_blank\">Datenschutz.</a></p>",
+            acceptAllButtonText: "Alle Aktzeptieren",
+            acceptAllButtonAccessibleLabel: "Accept all cookies",
+            rejectNonEssentialButtonText: "nicht Notwendige ablehnen",
+            rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+            preferencesButtonText: "Preferences",
+            preferencesButtonAccessibleLabel: "Toggle preferences"
+          },
+          preferences: {
+            title: "Cookies Anpassen",
+            description: "<p>Wir respektieren Ihr Recht auf Privatsphäre. Sie können festlegen, dass bestimmte Arten von Cookies nicht zugelassen werden. Ihre Cookie-Einstellungen gelten für unsere gesamte Website.</p>",
+            creditLinkText: "",
+            creditLinkAccessibleLabel: ""
+          }
+        },
+        position: {
+          banner: "bottomCenter"
+        }
+      });
+    </script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="orbit.png" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
 
     <!-- Primary Meta Tags -->
     <title>22Orbit - Webentwicklung & Digitale Lösungen</title>
@@ -84,7 +83,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     <meta property="og:url" content="https://22orbit.de/" />
     <meta property="og:title" content="22Orbit -  Webentwicklung & Digitale Lösungen" />
     <meta property="og:description" content="🚀 Moderne Webseiten, Online-Shops & Software-Lösungen von 22Orbit.Kein Baukasten, sondern maßgeschneidert für Ihr Geschäft. Schnell, mobilfreundlich, sicher. Schreiben Sie uns einfach, was Sie brauchen – wir kümmern uns um den Rest!" />
-    <meta property="og:image" content="https://22orbit.de/Astronautebay.png" />
+    <meta property="og:image" content="https://22orbit.de/22Orbit4X4Logo.jpg" />
     <meta property="og:site_name" content="22Orbit" />
     <meta property="og:locale" content="de_DE" />
 
@@ -93,7 +92,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     <meta property="twitter:url" content="https://22orbit.de/" />
     <meta property="twitter:title" content="22Orbit - Webentwicklung & Digitale Lösungen" />
     <meta property="twitter:description" content="🚀 Moderne Webseiten, Online-Shops & Software-Lösungen von 22Orbit.Kein Baukasten, sondern maßgeschneidert für Ihr Geschäft. Schnell, mobilfreundlich, sicher. Schreiben Sie uns einfach, was Sie brauchen – wir kümmern uns um den Rest!" />
-    <meta property="twitter:image" content="https://22orbit.de/Astronautebay.png" />
+    <meta property="twitter:image" content="https://22orbit.de/22Orbit4X4Logo.jpg" />
     <meta property="twitter:creator" content="@22orbit" />
 
     <!-- Additional SEO Tags -->
@@ -150,18 +149,16 @@ silktideCookieBannerManager.updateCookieBannerConfig({
       ]
     }
     </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17498833257"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17498833257');
+    </script>
   </head>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17498833257"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17498833257');
-</script>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
