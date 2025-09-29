@@ -30,7 +30,7 @@ const Impressum = () => {
               Betreiber / Unternehmen
             </h2>
             <p className="text-[#748cab] leading-relaxed">
-              22Orbit Einzelunternehmen
+              22Orbit
             </p>
           </div>
 
