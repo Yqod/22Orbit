@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import DOMPurify from 'dompurify';
 import FooterLegal from "../components/FooterLegal";
+import SEO, { seoConfig } from '../components/SEO';
 
 const Kontakt = () => {
     useEffect(() => {
@@ -256,6 +257,11 @@ const Kontakt = () => {
 
     return (
         <>
+             <SEO 
+            title={seoConfig.kontakt.title}
+            description={seoConfig.kontakt.description}
+            keywords={seoConfig.kontakt.keywords}
+        />
             <Navbar />
             <section className="min-h-screen bg-gradient-to-b from-[#1d2d44] to-[#0d1321] py-28 sm:py-28 px-4">
                 <div className="w-full max-w-7xl mx-auto">
