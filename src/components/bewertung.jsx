@@ -106,7 +106,7 @@ function ReviewCard({ review }) {
               rel="noopener noreferrer"
               className="text-[#748cab] text-sm hover:text-[#f0ebd8] transition underline"
             >
-              Original auf {review.source} ansehen
+              Original auf {review.source} ansehen.
             </a>
           </div>
         )}
@@ -118,7 +118,7 @@ function ReviewCard({ review }) {
             rel="noopener noreferrer"
             className="text-[#748cab] text-sm hover:text-[#f0ebd8] transition underline mt-4 text-center"
           >
-            Original auf {review.source} ansehen
+            Original auf {review.source} ansehen.
           </a>
         )}
       </div>
@@ -241,9 +241,7 @@ export default function Bewertungen() {
           </button>
         </div>
 
-        <p className="text-[#748cab] text-sm text-center mt-4 md:hidden">
-          Wische für mehr Bewertungen
-        </p>
+        
       </div>
     </section>
   );
