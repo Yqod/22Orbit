@@ -8,6 +8,9 @@ import FAQ from "./pages/FAQ.jsx";
 import Kontakt from "./pages/Kontakt.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Workflow from "./pages/workflow.jsx";
+import WebseitenLeistung from "./pages/webseiten.jsx";
+import SoftwareLeistung from "./pages/software.jsx";
+import SocialMediaMarketingLeistung from "./pages/socialmediamarketing.jsx";
 
 
 
@@ -25,6 +28,9 @@ function App() {
       <Route path="/faq" element={<FAQ />} />
       <Route path="/kontakt" element={<Kontakt />} />
       <Route path="/workflow" element={<Workflow />} />
+      <Route path="/webseiten" element={<WebseitenLeistung />} />
+      <Route path="/software" element={<SoftwareLeistung />} />
+      <Route path="/socialmediamarketing" element={<SocialMediaMarketingLeistung />} />
     </Routes>
     </>
   );

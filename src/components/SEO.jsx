@@ -88,7 +88,18 @@ export const seoConfig = {
     description: 'Professionelle Webentwicklung mit modernsten Technologien. Responsive, schnell und SEO-optimiert. Von der Konzeption bis zur Wartung.',
     keywords: 'Webentwicklung, React, Vue, JavaScript, Responsive Design, Mobile First, Progressive Web Apps, Frontend Entwicklung, Backend Entwicklung'
   },
+    socialmedia: {
+    title: "Social Media Marketing - Reichweite & Wachstum | 22Orbit",
+    description: "Professionelles Social Media Marketing von 22Orbit. Strategie, Content Creation, Community Management und Paid Advertising für maximale Reichweite.",
+    keywords: "Social Media Marketing, Instagram Marketing, Facebook Werbung, Content Creation, Community Management, Influencer Marketing, Social Media Strategie"
+  },
   
+  software: {
+    title: "Software Entwicklung - Individuelle Lösungen | 22Orbit", 
+    description: "Maßgeschneiderte Software-Entwicklung von 22Orbit. Web Applications, APIs, Automatisierung und AI-Lösungen für Ihr Unternehmen.",
+    keywords: "Software Entwicklung, Web Applications, API Development, Automatisierung, Custom Software, AI Lösungen, Cloud Integration"
+  },
+
   onlineShop: {
     title: 'Online-Shop Entwicklung',
     description: 'Erfolgreiche E-Commerce Lösungen: Maßgeschneiderte Online-Shops mit optimaler User Experience, sicheren Zahlungssystemen und effektivem Warenwirtschaftssystem.',
