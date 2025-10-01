@@ -5,6 +5,7 @@ import individuell from "../assets/individuell.svg";
 import fastdeliver from "../assets/fastdeliver.svg"; 
 import handshake from "../assets/handshake.svg";
 import wrench from "../assets/wrench.svg";
+import { Link } from "react-router-dom";
 
 
 const reasons = [
@@ -190,7 +191,15 @@ const LandingSection2 = () => {
             ))}
           </div>
         </div>
-
+            {/* CTA */}
+      <div className="text-center">
+        <Link
+          to="/workflow"
+          className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-full shadow-xl tracking-widest hover:scale-105 transition-all duration-300 hover:shadow-2xl"
+        >
+          entdecke unser Angebot
+        </Link>
+      </div>
         
         </div>
       </section>

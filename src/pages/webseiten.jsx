@@ -4,14 +4,14 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import FooterLegal from "../components/FooterLegal";
 import SEO, { seoConfig } from "../components/SEO";
-import lottiLeistungWebsite from "../assets/lotti/lottiLeistungWebsite.json";
+import lottiLeistungWebsite4 from "../assets/lotti/lottiLeistungWebsite4.json";
 
 const serviceList = [
     {
-        title: "Landing Pages",
+        title: "Webseiten & Landing Pages",
         emoji: "🚀",
         description:
-            "Hochkonvertierende Landing Pages, die deine Besucher zu Kunden machen. Optimiert für Performance und Conversion-Rate.",
+            "Hochkonvertierende Webseiten, die deine Besucher zu Kunden machen. Optimiert für Performance und Conversion-Rate.",
     },
     {
         title: "Online Shops",
@@ -70,7 +70,7 @@ const WebseitenLeistung = () => {
     }, []);
 
     const { View } = useLottie({
-    animationData: lottiLeistungWebsite,
+    animationData: lottiLeistungWebsite4,
     loop: true,
     autoplay: true,
     style: { width: 350, height: 400 }

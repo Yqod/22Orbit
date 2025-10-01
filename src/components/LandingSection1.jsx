@@ -2,6 +2,7 @@ import React from "react";
 import blitz from "../assets/blitz.svg";
 import shoppingCart from "../assets/shoppingCart.svg";
 import webdesign from "../assets/webdesign.svg";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -25,9 +26,9 @@ function LandingSection1() {
   return (
     <section
       id="section1"
-      className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex items-center justify-center my-0 py-24 sm:py-28 px-4"
+      className="min-h-screen bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321] flex flex-col items-center justify-center my-0 py-24 sm:py-28 px-4"
     >
-      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 mb-12">
         {/* Textbereich links, auf Mobil zentriert */}
         <div className="flex-1 w-full max-w-xl mx-auto text-center md:max-w-none md:mx-0 md:text-left mb-4 md:mb-0">
           <h2 className="font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#f0ebd8] font-bold tracking-widest drop-shadow-lg mb-6">
@@ -55,6 +56,16 @@ function LandingSection1() {
             </div>
           ))}
         </div>
+      </div>
+      
+      {/* CTA */}
+      <div className="text-center">
+        <Link
+          to="/workflow"
+          className="inline-block bg-gradient-to-r from-[#748cab] to-[#3e5c76] text-[#f0ebd8] font-bebas text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 rounded-full shadow-xl tracking-widest hover:scale-105 transition-all duration-300 hover:shadow-2xl"
+        >
+          unsere Leistungen
+        </Link>
       </div>
     </section>
   );
