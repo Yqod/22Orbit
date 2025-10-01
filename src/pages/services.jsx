@@ -1,7 +1,7 @@
-import WorkflowComponent from "../components/workflowComponent";
-import Navbar from "../components/Navbar";
+import WorkflowComponent from "../components/workflowComponent.jsx";
+import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/FooterLegal.jsx";
-import SEO, { seoConfig } from '../components/SEO';
+import SEO, { seoConfig } from '../components/SEO.jsx';
 import { useEffect } from "react";
 
 function WorkflowPage() {

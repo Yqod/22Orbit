@@ -38,7 +38,7 @@ const Navbar = () => {
     { label: "Unser Team", href: "team-section", type: "scroll" },
     { label: "Portfolio", href: "portfolio-section", type: "scroll" },
     { label: "Preise", href: "/preisliste", type: "route" },
-    { label: "Leistungen", href: "/workflow", type: "route" },
+    { label: "Leistungen", href: "/services", type: "route" },
     { label: "Kontakt", href: "/kontakt", type: "route" },
     ];
 

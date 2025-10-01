@@ -7,17 +7,14 @@ import Karriere from "./pages/Karriere.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import Kontakt from "./pages/Kontakt.jsx";
 import Pricing from "./pages/Pricing.jsx";
-import Workflow from "./pages/workflow.jsx";
+import WorkflowPage from "./pages/services.jsx";
 import WebseitenLeistung from "./pages/webseiten.jsx";
 import SoftwareLeistung from "./pages/software.jsx";
 import SocialMediaMarketingLeistung from "./pages/socialmediamarketing.jsx";
 
-
-
 function App() {
   return (
     <>
-    
     <Routes>
       <Route path="/" element={<Landingpage />} />
       <Route path="/preisliste" element={<Pricing />} />
@@ -27,7 +24,8 @@ function App() {
       <Route path="/karriere" element={<Karriere />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/kontakt" element={<Kontakt />} />
-      <Route path="/workflow" element={<Workflow />} />
+      
+      <Route path="/services" element={<WorkflowPage />} />
       <Route path="/webseiten" element={<WebseitenLeistung />} />
       <Route path="/software" element={<SoftwareLeistung />} />
       <Route path="/socialmediamarketing" element={<SocialMediaMarketingLeistung />} />
