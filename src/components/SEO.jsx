@@ -73,7 +73,7 @@ export default SEO;
 
 export const seoConfig = {
   home: {
-    title: 'Startseite | Webentwicklung aus Magdeburg 22Orbit',
+    title: 'Startseite | Webseiten aus Magdeburg 22Orbit',
     description: '🚀 Moderne Webseiten, Online-Shops & Software-Lösungen von 22Orbit. Kein Baukasten, sondern maßgeschneidert für Ihr Geschäft. Schnell, mobilfreundlich, sicher.',
     keywords: 'Webentwicklung, Websites, Webseiten, Landing Page, React, Online-Shop, Web-Anwendung, Software-Entwicklung, Frontend, Backend, UI/UX Design, Webagentur, Magdeburg'
   },
