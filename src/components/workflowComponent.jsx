@@ -69,7 +69,7 @@ const ServiceItem = ({ service }) => {
         <div className="mt-6">
           <Link
             to={service.link}
-            className="inline-block py-2 px-4 rounded-full bg-gradient-to-r from-[#748cab] to-[#3e5c76] hover:scale-105 text-[#f0ebd8] duration-300 font-bebas tracking-wide shadow-lg text-sm"
+            className="inline-block py-2 px-4 rounded-full bg-gradient-to-r from-[#748cab] to-[#3e5c76] hover:scale-105 text-[#f0ebd8] duration-300 font-bebas tracking-wide shadow-lg text-lg"
           >
             Mehr erfahren
           </Link>

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
+import { useLottie } from "lottie-react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import FooterLegal from "../components/FooterLegal";
 import SEO, { seoConfig } from "../components/SEO";
+import lottiLeistungWebsite from "../assets/lotti/lottiLeistungWebsite.json";
 
 const serviceList = [
     {
@@ -43,6 +45,8 @@ const serviceList = [
     },
 ];
 
+
+
 const ServiceItem = ({ service, isRightAlign }) => (
     <div className={`flex items-start mt-12 ${isRightAlign ? "lg:flex-row-reverse lg:text-right" : ""}`}>
         <div className={`flex-shrink-0 ${isRightAlign ? "ml-4" : "mr-4"}`}>
@@ -53,16 +57,25 @@ const ServiceItem = ({ service, isRightAlign }) => (
             </span>
         </div>
         <div className="flex-1">
-            <h4 className="text-2xl font-bebas tracking-wide text-[#f0ebd8] mb-4">{service.title}</h4>
+            <h4 className="text-2xl font-bebas tracking-wide text-[#f0ebd8] ml-4 mb-4">{service.title}</h4>
             <p className="text-[#748cab] font-light leading-relaxed">{service.description}</p>
         </div>
     </div>
 );
 
+
 const WebseitenLeistung = () => {
     useEffect(() => {
         setTimeout(() => window.scrollTo(0, 0), 0);
     }, []);
+
+    const { View } = useLottie({
+    animationData: lottiLeistungWebsite,
+    loop: true,
+    autoplay: true,
+    style: { width: 350, height: 400 }
+});
+
 
     return (
         <>
@@ -114,8 +127,8 @@ const WebseitenLeistung = () => {
                                 className="bg-gradient-to-br from-[#3e5c76]/30 to-[#748cab]/20 backdrop-blur-sm rounded-2xl h-full min-h-[400px] border border-[#748cab]/30 flex items-center justify-center"
                             >
                                 <div className="text-center p-8">
-                                    <div className="w-24 h-24 bg-gradient-to-r from-[#748cab] to-[#3e5c76] rounded-full flex items-center justify-center mb-6 mx-auto shadow-xl">
-                                        <span className="text-3xl">💻</span>
+                                    <div className="w-60 h-60   flex items-center justify-center mb-6 mx-auto ">
+                                        <span className="text-3xl">{View}</span>
                                     </div>
                                     <h3 className="font-bebas text-2xl text-[#f0ebd8] tracking-wide mb-4">
                                         Individuelle Entwicklung
