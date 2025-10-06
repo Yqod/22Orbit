@@ -51,13 +51,13 @@ const ServiceItem = ({ service }) => {
         <div className="w-[150px] h-[150px] rounded-full shadow-xl flex justify-center items-center mb-6 bg-[#748cab]/10">
           {View}
         </div>
-        <h4 className="text-2xl mb-6 font-bold font-bebas text-[#f0ebd8] tracking-wide">{service.title}</h4>
+        <h4 className="text-2xl mb-6 font-bold font-bebas text-[#f0ebd8] tracking-wider">{service.title}</h4>
         
         {/* Angebote Liste */}
         <div className="mb-4">
           {service.angebote.map((angebot, i) => (
             <span key={angebot} className="flex items-center mb-2">
-              <span className="text-[#748cab] font-bold mr-2">•</span>
+              <span className="text-[#748cab]  font-bold mr-2">•</span>
               <span className="text-[#f0ebd8] text-sm font-light">{angebot}</span>
             </span>
           ))}
