@@ -48,7 +48,7 @@ const ServiceItem = ({ service }) => {
   return (
     <div className="bg-[#3e5c76]/20 backdrop-blur-sm shadow-xl rounded-xl h-full border border-[#748cab]/30 hover:border-[#748cab]/60 transition-all duration-300 flex flex-col">
       <div className="p-6 md:p-12 flex-1 flex flex-col">
-        <div className="w-[150px] h-[150px] rounded-full shadow-xl flex justify-center items-center mb-6 bg-[#748cab]/10">
+        <div className="w-[150px] h-[150px]  flex justify-center items-center mb-6 ">
           {View}
         </div>
         <h4 className="text-2xl mb-6 font-bold font-bebas text-[#f0ebd8] tracking-wider">{service.title}</h4>
