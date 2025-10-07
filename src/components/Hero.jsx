@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div
   className="relative bg-gradient-to-b from-[#0d1321] via-[#1d2d44] to-[#0d1321]"
-  style={{ clipPath: "polygon(0 0, 100% 0, 100% 93%, 66% 100%, 0 85%)" }}
+  style={{ clipPath: "polygon(100% 0, 100% 94%, 64% 100%, 0 91%, 0 0)" }}
 >
     
 
