@@ -96,9 +96,9 @@ export const seoConfig = {
   },
   
   software: {
-    title: "Software Entwicklung - Individuelle Lösungen | 22Orbit Magdeburg", 
-    description: "Maßgeschneiderte Software-Entwicklung von 22Orbit. Web Applications, APIs, Automatisierung und AI-Lösungen für Ihr Unternehmen.",
-    keywords: "Software Entwicklung, Web Applications, API Development, Automatisierung, Custom Software, AI Lösungen, Cloud Integration"
+    title: "Softwareentwicklung - Individuelle Lösungen | 22Orbit Magdeburg", 
+    description: "Maßgeschneiderte Softwareentwicklung von 22Orbit. Web Applications, APIs, Automatisierung und AI-Lösungen für Ihr Unternehmen.",
+    keywords: "Softwareentwicklung, Web Applications, API Development, Automatisierung, Custom Software, AI Lösungen, Cloud Integration"
   },
 
   onlineShop: {
