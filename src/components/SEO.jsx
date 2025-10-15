@@ -85,18 +85,18 @@ export const seoConfig = {
   },
   
   webentwicklung: {
-    title: 'Webentwicklung | 22Orbit Magdeburg',
+    title: 'Webentwicklung | Innovation Magdeburg',
     description: 'Professionelle Webentwicklung mit modernsten Technologien. Responsive, schnell und SEO-optimiert. Von der Konzeption bis zur Wartung.',
     keywords: 'Webentwicklung, React, Vue, JavaScript, Responsive Design, Mobile First, Progressive Web Apps, Frontend Entwicklung, Backend Entwicklung'
   },
     socialmedia: {
-    title: "Social Media Marketing - Reichweite & Wachstum | 22Orbit Magdeburg",
+    title: "Social Media Marketing | Reichweite & Wachstum |",
     description: "Professionelles Social Media Marketing von 22Orbit. Strategie, Content Creation, Community Management und Paid Advertising für maximale Reichweite.",
     keywords: "Social Media Marketing, Instagram Marketing, Facebook Werbung, Content Creation, Community Management, Influencer Marketing, Social Media Strategie"
   },
   
   software: {
-    title: "Softwareentwicklung - Individuelle Lösungen | 22Orbit Magdeburg", 
+    title: "Softwareentwicklung | Individuelle Lösungen |", 
     description: "Maßgeschneiderte Softwareentwicklung von 22Orbit. Web Applications, APIs, Automatisierung und AI-Lösungen für Ihr Unternehmen.",
     keywords: "Softwareentwicklung, Web Applications, API Development, Automatisierung, Custom Software, AI Lösungen, Cloud Integration"
   },
