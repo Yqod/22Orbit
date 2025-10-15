@@ -85,7 +85,7 @@ export const seoConfig = {
   },
   
   webentwicklung: {
-    title: 'Webentwicklung | Innovation Magdeburg',
+    title: 'Webentwicklung | Innovativ und schnell |',
     description: 'Professionelle Webentwicklung mit modernsten Technologien. Responsive, schnell und SEO-optimiert. Von der Konzeption bis zur Wartung.',
     keywords: 'Webentwicklung, React, Vue, JavaScript, Responsive Design, Mobile First, Progressive Web Apps, Frontend Entwicklung, Backend Entwicklung'
   },
