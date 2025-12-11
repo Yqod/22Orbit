@@ -6,7 +6,7 @@ const SperryPortfolio = () => (
       {/* Bildbereich */}
       <div className="flex-1 flex items-center justify-center z-10">
         <img
-          src="/sperryMockup.png"
+          src="/sperrymockupneu.png"
           alt="Sperry Website Mockup"
           className="w-full max-w-[480px]  object-contain"
         />

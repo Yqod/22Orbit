@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Koenigskristall from "./Koenigskristall";
 import HkiPortfolio from "./hki";
 import SperryPortfolio from "./sperry";
+import Gplusgportfolio from "./gplusg";
 
 const LandingSection4 = () => {
   return (
@@ -12,14 +13,15 @@ const LandingSection4 = () => {
             Unsere Projekte
           </h2>
           <p className="text-[#f0ebd8] text-lg sm:text-xl md:text-2xl font-light max-w-4xl mx-auto px-4">
-            Ausgewählte Projekte aus unserem Orbit – von Magdeburg bis Paris, digital und international. <br />
+            Ausgewählte Projekte aus unserem Orbit. <br />
             
           </p>
         </div>
       </section>
       <Koenigskristall className="z-[10001]" />
-      <HkiPortfolio className="z-[10001]" />
+      <Gplusgportfolio className="z-[10001]" />
       <SperryPortfolio className="z-[10001]" />
+      <HkiPortfolio className="z-[10001]" />
     </>
   );
 };
