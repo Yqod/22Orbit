@@ -29,14 +29,7 @@ const teamMembers = [
     skills: ["Node.js", "Security", "DevOps"],
     image: "/juliusMojo1.webp"
   },
-  {
-    id: 4,
-    name: "Mainka Brüggemann",
-    role: "UI/UX Designerin",
-    description: "Entwirft benutzerfreundliche Oberflächen und sorgt für optimale Benutzererfahrung.",
-    skills: ["Figma", "Design Systems", "UX Research"],
-    image: "/majaMojo1.webp"
-  }
+  
 ];
 
 const Team = () => {
@@ -54,7 +47,7 @@ const Team = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
           {teamMembers.map((member) => (
             <div
               key={member.id}
